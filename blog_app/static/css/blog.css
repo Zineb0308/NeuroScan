@@ -1,0 +1,82 @@
+/* تصميم فاتح (Light Theme) للمدونة */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3F4F6; /* خلفية رمادية فاتحة */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+}
+
+/* الحاوية الرئيسية */
+.blog-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #FFFFFF; /* أبيض */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* منطقة المحتوى */
+#content {
+    flex: 3;
+    padding: 40px;
+    border-right: 1px solid #F0F0F0;
+}
+
+/* الشريط الجانبي */
+#sidebar {
+    flex: 1;
+    padding: 40px 30px;
+    background-color: #FAFAFA;
+}
+
+/* العناوين */
+h1 {
+    color: #1a428a; /* أزرق داكن */
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #FFC107; /* خط أصفر */
+    padding-bottom: 10px;
+}
+
+.post-item h2 a {
+    color: #1a428a;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.post-item h2 a:hover { color: #FFC107; }
+
+/* الأزرار والروابط */
+.sidebar-link {
+    display: block;
+    margin-bottom: 10px;
+    padding: 12px;
+    background-color: #FFFFFF;
+    color: #555;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+    transition: all 0.3s;
+}
+
+.sidebar-link:hover {
+    background-color: #FFF8E1; /* أصفر فاتح */
+    color: #1a428a;
+    border-color: #FFC107;
+}
+
+.tags a {
+    color: #555;
+    background-color: #F3F4F6;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.tags a:hover { background-color: #E5E7EB; color: #000; }
+

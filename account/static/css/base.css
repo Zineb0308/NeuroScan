@@ -1,0 +1,211 @@
+/*  paramétre de l'interface  */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f0f0; 
+}
+
+
+#header {
+    background-color: #1a428a; 
+    color: #FFC107; 
+    padding: 0 20px;
+    height: 70px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #FFC107; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1000;
+}
+
+/* logo */
+#header .logo {
+    font-weight: 800;
+    font-size: 2em;
+    color: #FFC107; 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#header .logo img {
+    height: 55px; 
+    width: auto;
+    margin-right: 12px;
+}
+
+/*  zone d'utilisateur "droite"   */
+.user-actions {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.dropbtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.dropbtn:hover {
+    background-color: rgba(255, 193, 7, 0.1); /* passer */
+}
+
+.username-header {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #FFC107; /*   couleur le nom d'utilisateur */
+}
+
+/* photo profil */
+.avatar-header {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* photo circle */
+    vertical-align: middle; /* alignemet vertical avec le texte */
+    margin-right: 8px; /*  une distance entre la photo et le nom  */
+    border: 2px solid #fff;
+}
+
+.user {
+    
+    float: right;
+    padding-top: 10px;
+}
+
+/*  lorsqu'il n'y a pas de photo . utilise un lettre */
+.avatar-placeholder-header {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #FFC107; 
+    color: #1a428a; /*  lettre bleu  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 2px solid #FFC107;
+}
+
+/*  liste déroulant   */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #ffffff;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1001;
+    border: 1px solid #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    color: #333;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f7ff;
+    color: #1a428a;
+}
+
+.dropdown-content hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/*  buttun déconnexion*/
+.logout-form-dropdown {
+    margin: 0;
+    width: 100%;
+}
+
+.dropdown-item-btn {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: #d9534f;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.dropdown-item-btn:hover {
+    background-color: #fff5f5;
+}
+
+.icon {
+    margin-right: 12px;
+    font-size: 1.2em;
+    width: 20px;
+    text-align: center;
+}
+
+/* se  connecter */
+.login-link {
+    background-color: #FFC107;
+    color: #1a428a;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#content {
+    padding: 20px 30px;
+}
+/*structure de button traduction google  */
+.google-item {
+    display: flex !important; /* l'icone apparait à coté du boutton */
+    align-items: center;
+    padding: 5px 16px !important;
+    overflow: hidden;
+}
+
+/* minimiser le bouton */
+#google_translate_element {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* cacché le cadre de google translateً */
+.goog-te-gadget-simple {
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 14px !important;
+}

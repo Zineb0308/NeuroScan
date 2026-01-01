@@ -1,0 +1,146 @@
+{% extends "account/base.html" %}
+{% load static %}
+
+{% block title %}Support – NeuroScan{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid py-4">
+
+    <!-- HEADER -->
+    <div class="card shadow-sm border-0 mb-4" style="border-left:6px solid #fff460;">
+        <div class="card-body">
+            <h2 class="fw-bold text-primary">🆘 Support & Assistance</h2>
+            <p class="text-muted mt-2">
+                Cette section est dédiée à l’accompagnement des utilisateurs de
+                <strong>NeuroScan</strong>, qu’ils soient étudiants, chercheurs ou
+                professionnels de la bio-informatique.
+            </p>
+        </div>
+    </div>
+
+    <!-- TYPES DE SUPPORT -->
+    <div class="row g-3 mb-4">
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-top border-4 border-primary">
+                <div class="card-body">
+                    <h5 class="fw-bold">🎓 Support académique</h5>
+                    <p class="text-muted">
+                        Aide à la compréhension des concepts en génomique,
+                        transcriptomique et analyse de données biologiques.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-top border-4 border-success">
+                <div class="card-body">
+                    <h5 class="fw-bold">💻 Support technique</h5>
+                    <p class="text-muted">
+                        Assistance liée à l’utilisation des outils,
+                        à l’importation des données et aux erreurs techniques.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-top border-4 border-warning">
+                <div class="card-body">
+                    <h5 class="fw-bold">📊 Support analytique</h5>
+                    <p class="text-muted">
+                        Orientation dans l’interprétation des résultats
+                        statistiques et biologiques.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- TABLEAU DE SUPPORT -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-header fw-bold bg-dark text-white">
+            📋 Services de support disponibles
+        </div>
+
+        <div class="table-responsive">
+            <table class="table mb-0" style="border-collapse:collapse; width:100%;">
+                <thead style="background:#f8f9fa;">
+                    <tr>
+                        <th style="border:2px solid #333;" class="text-center align-middle">Service</th>
+                        <th style="border:2px solid #333;" class="text-center align-middle">Description</th>
+                        <th style="border:2px solid #333;" class="text-center align-middle">Public cible</th>
+                        <th style="border:2px solid #333;" class="text-center align-middle">Disponibilité</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td style="border:2px solid #333;" class="text-center align-middle">
+                            Assistance pédagogique
+                        </td>
+                        <td style="border:2px solid #333;" class="text-center align-middle">
+                            Explication des méthodes d’analyse et des pipelines bioinformatiques.
+                        </td>
+                        <td style="border:2px solid #333;" class="text-center align-middle">
+                            Étudiants / Doctorants
+                        </td>
+                        <td style="border:2px solid #333;" class="text-center align-middle">
+                            <span class="badge bg-success">Disponible</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:2px solid #333;" class="text-center align-middle">
+                            Support technique
+                        </td>
+                        <td style="border:2px solid #333;" class="text-center align-middle">
+                            Résolution des problèmes liés aux outils et à la plateforme.
+                        </td>
+                        <td style="border:2px solid #333;" class="text-center align-middle">
+                            Tous les utilisateurs
+                        </td>
+                        <td style="border:2px solid #333;" class="text-center align-middle">
+                            <span class="badge bg-success">Disponible</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="border:2px solid #333;" class="text-center align-middle">
+                            Interprétation des résultats
+                        </td>
+                        <td style="border:2px solid #333;" class="text-center align-middle">
+                            Aide à la lecture des graphiques, heatmaps et analyses statistiques.
+                        </td>
+                        <td style="border:2px solid #333;" class="text-center align-middle">
+                            Chercheurs
+                        </td>
+                        <td style="border:2px solid #333;" class="text-center align-middle">
+                            <span class="badge bg-warning text-dark">Sur demande</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="fw-bold">📨 Besoin d’aide ?</h5>
+            <p class="text-muted">
+                Pour toute demande spécifique ou problème technique,
+                veuillez contacter l’équipe NeuroScan.
+            </p>
+
+            <a href="#" class="btn btn-primary">Contacter le support</a>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+

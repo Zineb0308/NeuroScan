@@ -1,0 +1,53 @@
+{% extends "account/base.html" %}
+{% block title %}Base de données | NeuroScan{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+
+    <h2 class="fw-bold text-primary mb-4">🗄️ Base de données NeuroScan</h2>
+
+    <p class="text-muted">
+        Cette base centralise les données biologiques et cliniques utilisées
+        pour l’analyse des maladies neurologiques.
+    </p>
+
+    <div class="card shadow-sm">
+        <div class="card-header fw-bold">
+            📊 Aperçu des données
+        </div>
+        <div class="card-body table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Source</th>
+                        <th>Type de données</th>
+                        <th>Nombre d’échantillons</th>
+                        <th>Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GEO</td>
+                        <td>RNA-Seq</td>
+                        <td>45</td>
+                        <td>Patients</td>
+                    </tr>
+                    <tr>
+                        <td>TCGA</td>
+                        <td>Génomique</td>
+                        <td>30</td>
+                        <td>Patients</td>
+                    </tr>
+                    <tr>
+                        <td>SRA</td>
+                        <td>RNA-Seq</td>
+                        <td>25</td>
+                        <td>Témoins sains</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

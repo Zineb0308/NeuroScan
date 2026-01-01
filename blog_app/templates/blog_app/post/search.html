@@ -1,0 +1,38 @@
+{% extends "account/base.html" %}
+{% load static %}
+{% load blog_tags %} {% block title %}Search{% endblock %}
+
+{% block content %}
+<div class="blog-container" style="max-width: 900px; margin: 50px auto; padding: 20px;">
+
+  {% if query %}
+    <h1>Posts containing "{{ query }}"</h1>
+    <h3>
+      {% with results.count as total_results %}
+        Found {{ total_results }} result{{ total_results|pluralize }}
+      {% endwith %}
+    </h3>
+    {% for post in results %}
+      <article class="post-item" style="border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 15px;">
+        <h4>
+          <a href="{{ post.get_absolute_url }}" style="color: #3b5998; font-size: 1.2em;">{{ post.title }}</a>
+        </h4>
+        <div class="post-excerpt" style="font-size: 0.9em;">
+            {{ post.body|markdown|truncatewords_html:12 }}
+        </div>
+      </article>
+    {% empty %}
+      <p>There are no results for your query.</p>
+    {% endfor %}
+    <p><a href="{% url 'blog:post_search' %}" style="color: #FF9800;">Search again</a></p>
+  {% else %}
+    <h1>Search for posts</h1>
+    <p>Use the form below to search for posts within NeuroScan.</p>
+    <form method="get">
+      {{ form.as_p }}
+      <input type="submit" value="Search" style="background-color: #FFC107; border: none; padding: 10px 15px; border-radius: 4px; font-weight: bold; cursor: pointer;">
+    </form>
+  {% endif %}
+
+</div>
+{% endblock %}

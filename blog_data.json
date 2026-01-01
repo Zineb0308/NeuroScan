@@ -1,0 +1,2025 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-11-13T21:05:48.094Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "🧠 Qu’est-ce que le Neuroblastome ?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-11-13T21:28:13.182Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "🧠 Qu’est-ce que le Neuroblastome ?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-11-13T22:08:21.460Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "🧠 Qu’est-ce que le Neuroblastome ?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-11-14T11:26:44.256Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "🧠 Qu’est-ce que le Neuroblastome ?",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-11-14T11:38:51.792Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "🧠Qu’est-ce que le Neuroblastome?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-11-14T11:46:05.502Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "🔬 Qu’est-ce que le myéloblastome ? Comprendre la maladie en 1 minute",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-11-14T11:47:30.128Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "📝 Test du système de publication – Brouillon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-11-14T14:09:00.794Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "🩺 Les symptômes du neuroblastome en détail",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-11-14T14:16:18.755Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "📝 Test du système de publication – Brouillon",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-11-14T14:18:02.552Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "📊 Les stades du neuroblastome : comment la maladie évolue",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-11-14T14:19:10.115Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "🔬 Diagnostic du neuroblastome : les examens expliqués simplement",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-11-14T14:19:36.288Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "📊 Les stades du neuroblastome : comment la maladie évolue",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-11-14T14:19:46.593Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "🔬 Diagnostic du neuroblastome : les examens expliqués simplement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-11-14T14:19:55.572Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "🧠Qu’est-ce que le Neuroblastome?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-11-14T14:20:35.236Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "🧠Qu’est-ce que le Neuroblastome?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-11-14T14:20:56.954Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "🔬 Qu’est-ce que le myéloblastome ? Comprendre la maladie en 1 minute",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-11-14T14:21:08.511Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "🔬 Qu’est-ce que le myéloblastome ? Comprendre la maladie en 1 minute",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-11-14T14:21:31.917Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "🩺 Les symptômes du neuroblastome en détail",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-11-14T14:21:47.288Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "📊 Les stades du neuroblastome : comment la maladie évolue",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-11-14T14:22:00.759Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "🔬 Diagnostic du neuroblastome : les examens expliqués simplement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-11-14T14:41:21.518Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "📊 Les stades du neuroblastome : comment la maladie évolue",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-11-14T15:38:07.317Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "🧠Qu’est-ce que le Neuroblastome?",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-11-14T21:37:02.155Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "🧠Qu’est-ce que le Neuroblastome?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-11-14T21:37:19.306Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "🔬 Qu’est-ce que le myéloblastome ? Comprendre la maladie en 1 minute",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-11-14T21:37:34.113Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "🩺 Les symptômes du neuroblastome en détail",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-11-14T21:37:52.274Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "📊 Les stades du neuroblastome : comment la maladie évolue",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-11-14T21:38:14.740Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "🔬 Diagnostic du neuroblastome : les examens expliqués simplement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-11-14T22:23:07.831Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "🧠 Qu’est-ce que le Neuroblastome ?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-11-14T22:25:01.423Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "🔬 Qu’est-ce que le myéloblastome ? Comprendre la maladie en 1 minute",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-11-14T22:26:29.379Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "🩺 Les symptômes du neuroblastome en détail",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-11-14T22:27:19.345Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "📊 Les stades du neuroblastome : comment la maladie évolue",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-11-14T22:28:38.262Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "🔬 Diagnostic du neuroblastome : les examens expliqués simplement",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-11-14T22:29:52.835Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "🩺 Les symptômes du neuroblastome en détail",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\", \"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-11-14T22:30:12.697Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "📊 Les stades du neuroblastome : comment la maladie évolue",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\", \"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-11-15T22:27:56.803Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "🧠 Qu’est-ce que le Neuroblastome ?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-11-15T22:28:08.324Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "🔬 Qu’est-ce que le myéloblastome ? Comprendre la maladie en 1 minute",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-11-15T22:28:25.319Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "🩺 Les symptômes du neuroblastome en détail",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-11-15T22:28:34.232Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "📊 Les stades du neuroblastome : comment la maladie évolue",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-11-15T22:28:43.448Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "🔬 Diagnostic du neuroblastome : les examens expliqués simplement",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Publish\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-11-16T12:59:42.710Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "🧠 Qu’est-ce que le Neuroblastome ?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-11-16T13:00:22.417Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "🧠 Qu’est-ce que le Neuroblastome ?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-11-16T13:24:43.786Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "🔬 Qu’est-ce que le myéloblastome ? Comprendre la maladie en 1 minute",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-11-16T13:28:42.717Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "📊 Les stades du neuroblastome : comment la maladie évolue",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-11-16T14:39:35.992Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "🧠 Qu’est-ce que le Neuroblastome ?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-11-16T14:39:57.779Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "🩺 Les symptômes du neuroblastome en détail",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-11-17T14:14:30.564Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "example.com",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-11-17T14:19:31.464Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "127.0.0.1:8000",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2025-11-17T21:53:50.740Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "📊 Les stades du neuroblastome : comment la maladie évolue",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2025-11-17T21:57:49.777Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "asma",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2025-11-17T21:58:39.422Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "asma",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Superuser status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2025-11-17T21:59:13.496Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "asma",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2025-11-17T21:59:45.684Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Zineb",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2025-11-17T21:59:59.280Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "asma",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2025-11-17T22:00:45.582Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "aya",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2025-11-17T22:03:48.974Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "aya",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Staff status\", \"Superuser status\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 8,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 8,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 8,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 8,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 9,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 9,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 9,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 9,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": 10,
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": 10,
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": 10,
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": 10,
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add source",
+    "content_type": 11,
+    "codename": "add_source"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change source",
+    "content_type": 11,
+    "codename": "change_source"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete source",
+    "content_type": 11,
+    "codename": "delete_source"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view source",
+    "content_type": 11,
+    "codename": "view_source"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add thumbnail",
+    "content_type": 12,
+    "codename": "add_thumbnail"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change thumbnail",
+    "content_type": 12,
+    "codename": "change_thumbnail"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete thumbnail",
+    "content_type": 12,
+    "codename": "delete_thumbnail"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view thumbnail",
+    "content_type": 12,
+    "codename": "view_thumbnail"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add thumbnail dimensions",
+    "content_type": 13,
+    "codename": "add_thumbnaildimensions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change thumbnail dimensions",
+    "content_type": 13,
+    "codename": "change_thumbnaildimensions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete thumbnail dimensions",
+    "content_type": 13,
+    "codename": "delete_thumbnaildimensions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view thumbnail dimensions",
+    "content_type": 13,
+    "codename": "view_thumbnaildimensions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add site",
+    "content_type": 14,
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change site",
+    "content_type": 14,
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete site",
+    "content_type": 14,
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view site",
+    "content_type": 14,
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$bXA8HivmNtmWmy0cta7oh7$RqDOiTLnGUl9QPPRq+tAsS1/30ZItoNpJjEEHK7vC3o=",
+    "last_login": "2025-11-18T23:27:45.253Z",
+    "is_superuser": true,
+    "username": "Zineb",
+    "first_name": "",
+    "last_name": "",
+    "email": "gelecegindehalari@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-11-13T19:22:58.742Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$UU7d5NSZbfa151W5fMg5Ak$GjQLt6E+J//HHpg/7+XMywuP3L21Q3AO9QKrSqxjZJQ=",
+    "last_login": "2025-11-18T18:53:51.530Z",
+    "is_superuser": true,
+    "username": "asma",
+    "first_name": "asma",
+    "last_name": "boukelsous",
+    "email": "asmaebks@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-11-17T21:57:48Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$d5ZtKmI1XxSPBugOYlHewO$+vrPvBQQ2VDvhKr6y9r3Vl/ws2AN9PSvRG4Ip/FCnbg=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "aya",
+    "first_name": "aya",
+    "last_name": "merahi",
+    "email": "ayamerahi99@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-11-17T22:00:44Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "blog_app",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "blog_app",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "easy_thumbnails",
+    "model": "source"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "easy_thumbnails",
+    "model": "thumbnail"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "easy_thumbnails",
+    "model": "thumbnaildimensions"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0gvwtwizyjz6qungblx0smf76wr8daw6",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlnxBv8o6XMGa3dt4wBypDipEHcHSymgG817My8RcN9K2FtawxzFRShx-u0I-ZFqB_GO9bZIXuq2ziS7Ig_a5LTE9Lwe7t9BwVb62njGjERn9w0AObnRa-sse-2UQQvWZKMGB0TWIQ1eM2hjmQHMiFm8P-1sN7k:1vJe1f:aVim1Pj9fRJCn9Qfvr9Hy-57Nrzw91tg05cTLeLEYg8",
+    "expire_date": "2025-11-27T20:34:39.133Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bli7zbdc5m7w4fzzybg81fwy5t6htz1p",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlnGv40p6XMGa71r4wBypDipEHeHSCmgfTPzXiLitta49bzEicVFnMXpd0tIj9x2wHdst1nS3NZlSnJX5EG7HGfOz-vh_h1U7PVbKwS2oK3OJpjBG1eKK8loGxwTUrF-IKAUCKxXRSmkDNqxAc7otDbi_QHaJDfW:1vLV6v:NUJxUQwur351_-VSlZ45YHdRcnm9SD1cS3NCNJ1D1pU",
+    "expire_date": "2025-12-02T23:27:45.255Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cnxb7ze7j1ba8lw20rcgkrrtfovpz6ph",
+  "fields": {
+    "session_data": ".eJxVjE0OwiAYBe_C2hCgBcGl-56BfD8gVQNJaVfGu2uTLnT7Zua9RIRtLXHraYkzi4sw4vS7IdAj1R3wHeqtSWp1XWaUuyIP2uXUOD2vh_t3UKCXb31Gzuh8SE4DkR20RYKQUStwlBhGr6xhq4PPzoTsrddamSGzpZGdAfH-AAI7ODE:1vLQ69:b-adXhYggz3DcTC2TmHVtzgv8PkWb8Ztj5EJgMhC_Mw",
+    "expire_date": "2025-12-02T18:06:37.278Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "err7sd7m3nbm9p0fw78y40wtz43hteam",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlnxBv8o6XMGa3dt4wBypDipEHcHSymgG817My8RcN9K2FtawxzFRShx-u0I-ZFqB_GO9bZIXuq2ziS7Ig_a5LTE9Lwe7t9BwVb62njGjERn9w0AObnRa-sse-2UQQvWZKMGB0TWIQ1eM2hjmQHMiFm8P-1sN7k:1vL7Df:B0g4I1jVvUYmLi5VemUMCtLyubQvyb7udX610tjbgI4",
+    "expire_date": "2025-12-01T21:57:07.421Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "obcibcezvifi520jm9qv8a093d20jmq9",
+  "fields": {
+    "session_data": ".eJxVjE0OwiAYBe_C2hCgBcGl-56BfD8gVQNJaVfGu2uTLnT7Zua9RIRtLXHraYkzi4sw4vS7IdAj1R3wHeqtSWp1XWaUuyIP2uXUOD2vh_t3UKCXb31Gzuh8SE4DkR20RYKQUStwlBhGr6xhq4PPzoTsrddamSGzpZGdAfH-AAI7ODE:1vLQpr:r62mCGIAoHkNflz3HOaJnQS6f-XjTOdF5CMA5Rpp9CI",
+    "expire_date": "2025-12-02T18:53:51.531Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "x7bzjb6uxxoq4fbv1z874q5ddd7400k9",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlnxBv8o6XMGa3dt4wBypDipEHcHSymgG817My8RcN9K2FtawxzFRShx-u0I-ZFqB_GO9bZIXuq2ziS7Ig_a5LTE9Lwe7t9BwVb62njGjERn9w0AObnRa-sse-2UQQvWZKMGB0TWIQ1eM2hjmQHMiFm8P-1sN7k:1vLRUV:QWbALf9BjLnvpUzQ4ebr16vRt6OwpxmeP-vj95Rux6Q",
+    "expire_date": "2025-12-02T19:35:51.497Z"
+  }
+},
+{
+  "model": "blog_app.post",
+  "pk": 1,
+  "fields": {
+    "title": "🧠 Qu’est-ce que le Neuroblastome ?",
+    "slug": "quest-ce-que-le-neuroblastome",
+    "author": 1,
+    "body": "🧬 Le neuroblastome, c’est un cancer rare qui touche principalement les jeunes enfants.\r\nIl se développe à partir de cellules nerveuses immatures appelées neuroblastes.\r\n\r\nMalgré sa rareté, il représente l’un des cancers les plus fréquents chez l’enfant.\r\nGrâce aux avancées en bioinformatique et à l’analyse génomique et transcriptomique, les chercheurs peuvent mieux comprendre les mécanismes du développement tumoral et identifier de nouvelles cibles thérapeutiques.\r\n\r\n🌿 Notre mission : créer une plateforme interactive pour informer, sensibiliser et encourager la recherche sur le neuroblastome.\r\nParce que chaque donnée compte, et chaque découverte rapproche un peu plus de l’espoir. 💚",
+    "publish": "2025-11-15T11:10:00Z",
+    "created": "2025-11-14T22:23:07.818Z",
+    "updated": "2025-11-16T14:39:35.971Z",
+    "status": "PB",
+    "image": "posts/2025/11/16/من1_RDsKqa4.png"
+  }
+},
+{
+  "model": "blog_app.post",
+  "pk": 3,
+  "fields": {
+    "title": "🩺 Les symptômes du neuroblastome en détail",
+    "slug": "les-symptomes-du-neuroblastome-en-detail",
+    "author": 1,
+    "body": "Le neuroblastome peut se développer dans différentes régions du corps, ce qui explique la variété des symptômes. \r\nChez l’enfant, les signes apparaissent souvent de manière progressive, rendant le diagnostic parfois difficile. \r\nVoici les symptômes les plus importants à connaître :\r\n\r\n🔍 **1. Symptômes abdominaux (les plus fréquents)**\r\n- Masse ou gonflement du ventre  \r\n- Douleurs abdominales persistantes  \r\n- Perte d’appétit  \r\n- Constipation ou troubles digestifs  \r\n\r\n🧠 **2. Symptômes neurologiques**\r\nLorsque la tumeur se trouve près de la colonne vertébrale :\r\n- Faiblesse musculaire  \r\n- Difficulté à marcher  \r\n- Engourdissements des jambes  \r\n- Troubles de la coordination  \r\n\r\n💙 **3. Symptômes généraux**\r\n- Fatigue intense  \r\n- Fièvre légère prolongée  \r\n- Amaigrissement involontaire  \r\n- Pâleur  \r\n\r\n👀 **4. Signes visibles sur le visage ou les yeux**\r\n- Ecchymoses autour des yeux (“yeux en panda”)  \r\n- Œdèmes des paupières  \r\n- Mouvements oculaires anormaux (opsoclonies)\r\n\r\n🫀 **5. Symptômes liés aux glandes surrénales**\r\nSi la tumeur est située près des glandes surrénales :\r\n- Hypertension  \r\n- Transpiration excessive  \r\n- Accélération du rythme cardiaque  \r\n\r\n🩺 **Pourquoi ces symptômes sont importants ?**\r\nLe neuroblastome est plus facile à traiter lorsqu’il est détecté tôt. \r\nUne attention particulière aux changements inhabituels chez l’enfant peut permettre un diagnostic plus rapide.\r\n\r\n👉 Toujours consulter un médecin si plusieurs de ces symptômes apparaissent en même temps ou persistent.",
+    "publish": "2025-11-15T11:10:04Z",
+    "created": "2025-11-14T22:26:29.369Z",
+    "updated": "2025-11-16T14:39:57.767Z",
+    "status": "PB",
+    "image": "posts/2025/11/16/الاعراض_NL3wIrR.jpg"
+  }
+},
+{
+  "model": "blog_app.post",
+  "pk": 4,
+  "fields": {
+    "title": "📊 Les stades du neuroblastome : comment la maladie évolue",
+    "slug": "les-stades-du-neuroblastome-comment-la-maladie-evolue",
+    "author": 1,
+    "body": "Pour mieux comprendre le neuroblastome et orienter le traitement, les médecins utilisent un système de \"stades\". \r\nChaque stade décrit l’étendue de la tumeur et si elle s’est propagée ou non dans le corps. \r\nVoici une explication simple et claire des principaux stades :\r\n\r\n📌 **Stade 1 :**\r\n- La tumeur est située dans une seule région.  \r\n- Elle est bien délimitée et peut être retirée entièrement par chirurgie.  \r\n- C’est le stade le plus favorable.\r\n\r\n📌 **Stade 2A / 2B :**\r\n- **2A :** La tumeur est encore localisée mais difficile à enlever complètement.  \r\n- **2B :** La tumeur est localisée, mais les ganglions lymphatiques voisins peuvent être touchés.  \r\n\r\n📌 **Stade 3 :**\r\n- La tumeur est plus étendue.  \r\n- Elle traverse le milieu du corps (ligne médiane) ou touche des ganglions importants.  \r\n- La chirurgie seule n’est généralement pas suffisante.\r\n\r\n📌 **Stade 4 :**\r\n- La tumeur s’est propagée à distance (métastases).  \r\n- Les organes souvent touchés : os, moelle osseuse, foie, peau.  \r\n- Ce stade nécessite des traitements intensifs.\r\n\r\n📌 **Stade 4S (aussi appelé \"4 Special\") :**\r\n- Concerne uniquement les bébés de moins d’un an.  \r\n- La tumeur peut s’être propagée, mais ce stade répond très bien au traitement.  \r\n- Dans certains cas, la tumeur peut même régresser naturellement.\r\n\r\n🎗️ **Pourquoi connaître les stades ?**\r\nLe stade permet aux médecins de choisir le traitement le plus adapté (chirurgie, chimio, immunothérapie, etc.) \r\net d’évaluer les chances de guérison.  \r\nUn diagnostic précoce améliore nettement le pronostic.\r\n\r\n👉 Ce post vise à expliquer simplement un sujet complexe et à sensibiliser les parents à l’importance du dépistage.",
+    "publish": "2025-11-15T11:10:06Z",
+    "created": "2025-11-14T22:27:19.336Z",
+    "updated": "2025-11-16T13:28:42.709Z",
+    "status": "PB",
+    "image": "posts/2025/11/16/الاعراض.jpg"
+  }
+},
+{
+  "model": "blog_app.post",
+  "pk": 5,
+  "fields": {
+    "title": "🔬 Diagnostic du neuroblastome : les examens expliqués simplement",
+    "slug": "diagnostic-du-neuroblastome-les-examens-expliques-simplement",
+    "author": 1,
+    "body": "Le diagnostic du neuroblastome repose sur une série d’examens médicaux qui permettent de confirmer la présence de la tumeur, \r\nde déterminer son emplacement et d’évaluer son étendue. Voici les étapes les plus importantes expliquées de manière simple :\r\n\r\n🩺 **1. Examen clinique**\r\nLe médecin commence par examiner l’enfant :\r\n- recherche d’une masse dans le ventre,\r\n- observation de la peau et des yeux,\r\n- évaluation de la fatigue, de la douleur ou de la perte de poids.\r\n\r\n🔬 **2. Analyses sanguines et urinaires**\r\nCertaines substances appelées catécholamines sont élevées chez les enfants atteints de neuroblastome.\r\n- Un dosage dans le sang ou l’urine peut aider au diagnostic.\r\n- Ces tests sont simples et rapides.\r\n\r\n🖥️ **3. Imagerie médicale**\r\nPour visualiser la tumeur et ses dimensions :\r\n- **Échographie abdominale** : première étape, indolore et non invasive.  \r\n- **Scanner (CT scan)** : donne une vue détaillée de la tumeur.  \r\n- **IRM** : utile pour voir les tissus nerveux et la moelle épinière.  \r\n- **Scintigraphie MIBG** : examen spécifique qui détecte la propagation du neuroblastome dans le corps.\r\n\r\n🧫 **4. Biopsie**\r\nC’est l’étape la plus importante pour confirmer le diagnostic.\r\n- Un petit échantillon de la tumeur est prélevé.  \r\n- Il permet d’identifier le type de cellules cancéreuses et d’évaluer leur agressivité.\r\n\r\n🦴 **5. Examens de la moelle osseuse**\r\nLe neuroblastome peut se propager aux os et à la moelle osseuse :\r\n- Aspiration ou biopsie de la moelle pour vérifier la présence de cellules cancéreuses.\r\n\r\n📊 **6. Tests génétiques de la tumeur**\r\nCes tests recherchent des anomalies particulières (comme l’amplification du gène MYCN), \r\nqui aident à classer le risque et à choisir le traitement adapté.\r\n\r\n🎗️ **Pourquoi ces examens sont importants ?**\r\nIls permettent de poser un diagnostic précis, d’évaluer le stade de la maladie et de construire un plan de traitement personnalisé.\r\n\r\n👉 Plus le diagnostic est précoce, meilleures sont les chances de guérison.",
+    "publish": "2025-11-15T11:10:08Z",
+    "created": "2025-11-14T22:28:38.256Z",
+    "updated": "2025-11-15T22:28:43.445Z",
+    "status": "PB",
+    "image": ""
+  }
+},
+{
+  "model": "blog_app.comment",
+  "pk": 1,
+  "fields": {
+    "post": 4,
+    "name": "selssabil",
+    "email": "gelecegindehalari@gmail.com",
+    "body": "Super article, merci pour le partage!",
+    "created": "2025-11-16T01:06:36.282Z",
+    "updated": "2025-11-16T01:06:36.282Z",
+    "active": true
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "enfants",
+    "slug": "enfants"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "cancer pédiatrique",
+    "slug": "cancer-pédiatrique"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "glandes surrénales",
+    "slug": "glandes-surrénales"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "sensibilisation",
+    "slug": "sensibilisation"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 5,
+  "fields": {
+    "name": "neuroblastome",
+    "slug": "neuroblastome"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 6,
+  "fields": {
+    "name": "myéloblastome",
+    "slug": "myéloblastome"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 7,
+  "fields": {
+    "name": "cellules sanguines",
+    "slug": "cellules-sanguines"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 8,
+  "fields": {
+    "name": "leucémie",
+    "slug": "leucémie"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 9,
+  "fields": {
+    "name": "cancer",
+    "slug": "cancer"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 10,
+  "fields": {
+    "name": "dépistage",
+    "slug": "dépistage"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 11,
+  "fields": {
+    "name": "symptômes",
+    "slug": "symptômes"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 12,
+  "fields": {
+    "name": "signes cliniques",
+    "slug": "signes-cliniques"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 13,
+  "fields": {
+    "name": "stades",
+    "slug": "stades"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 14,
+  "fields": {
+    "name": "médecine",
+    "slug": "médecine"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 15,
+  "fields": {
+    "name": "classification",
+    "slug": "classification"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 16,
+  "fields": {
+    "name": "diagnostic",
+    "slug": "diagnostic"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 17,
+  "fields": {
+    "name": "biopsie",
+    "slug": "biopsie"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 18,
+  "fields": {
+    "name": "imagerie",
+    "slug": "imagerie"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 19,
+  "fields": {
+    "name": "analyses",
+    "slug": "analyses"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 6,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 12,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 16,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 17,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 18,
+  "fields": {
+    "tag": 13,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 19,
+  "fields": {
+    "tag": 14,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 20,
+  "fields": {
+    "tag": 15,
+    "content_type": 7,
+    "object_id": 6
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 21,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 22,
+  "fields": {
+    "tag": 16,
+    "content_type": 7,
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 23,
+  "fields": {
+    "tag": 17,
+    "content_type": 7,
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 24,
+  "fields": {
+    "tag": 18,
+    "content_type": 7,
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 25,
+  "fields": {
+    "tag": 19,
+    "content_type": 7,
+    "object_id": 7
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 26,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 27,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 28,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 29,
+  "fields": {
+    "tag": 4,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 30,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 35,
+  "fields": {
+    "tag": 10,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 36,
+  "fields": {
+    "tag": 11,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 37,
+  "fields": {
+    "tag": 12,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 38,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 39,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 40,
+  "fields": {
+    "tag": 5,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 41,
+  "fields": {
+    "tag": 13,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 42,
+  "fields": {
+    "tag": 14,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 43,
+  "fields": {
+    "tag": 15,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 44,
+  "fields": {
+    "tag": 16,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 45,
+  "fields": {
+    "tag": 17,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 46,
+  "fields": {
+    "tag": 18,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 47,
+  "fields": {
+    "tag": 19,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 1,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "posts/2025/11/16/من1_RDsKqa4.png",
+    "modified": "2025-11-16T17:47:40.687Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 2,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "posts/2025/11/16/الاعراض_NL3wIrR.jpg",
+    "modified": "2025-11-17T13:32:39.492Z"
+  }
+},
+{
+  "model": "easy_thumbnails.source",
+  "pk": 3,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "posts/2025/11/16/الاعراض.jpg",
+    "modified": "2025-11-17T13:32:43.413Z"
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 1,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "posts/2025/11/16\\من1_RDsKqa4.png.300x200_q85_crop-smart.png",
+    "modified": "2025-11-16T17:39:55.182Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 2,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "posts/2025/11/16\\الاعراض_NL3wIrR.jpg.300x200_q85_crop-smart.jpg",
+    "modified": "2025-11-16T17:39:55.249Z",
+    "source": 2
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 3,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "posts/2025/11/16\\الاعراض.jpg.300x200_q85_crop-smart.jpg",
+    "modified": "2025-11-16T17:39:55.289Z",
+    "source": 3
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 4,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "posts/2025/11/16\\من1_RDsKqa4.png.800x0_q85_crop-smart.png",
+    "modified": "2025-11-16T17:47:40.699Z",
+    "source": 1
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 5,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "posts/2025/11/16\\الاعراض_NL3wIrR.jpg.800x0_q85_crop-smart.jpg",
+    "modified": "2025-11-17T13:32:39.504Z",
+    "source": 2
+  }
+},
+{
+  "model": "easy_thumbnails.thumbnail",
+  "pk": 6,
+  "fields": {
+    "storage_hash": "0d677af76ca5bf5575d614e04932c3a4",
+    "name": "posts/2025/11/16\\الاعراض.jpg.800x0_q85_crop-smart.jpg",
+    "modified": "2025-11-17T13:32:43.422Z",
+    "source": 3
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "127.0.0.1:8000",
+    "name": "127.0.0.1:8000"
+  }
+}
+]

@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+#header {
+    background-color: lab(83.78% -14.04 54.74);
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    overflow: hidden;
+}
+
+#header .logo {
+    float: left;
+    margin-right: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#header .user {
+    float: right;
+    padding: 0 10px;
+}
+
+#header .user a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+#header .menu {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#header .menu li {
+    float: left;
+    padding: 0 15px;
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+
+#header .menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#content {
+    padding: 20px 30px;
+}

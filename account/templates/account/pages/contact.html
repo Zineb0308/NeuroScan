@@ -1,0 +1,97 @@
+{% extends "account/base.html" %}
+{% load static %}
+
+{% block title %}Contact – NeuroScan{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid py-4" style="background:#f8f9fa;">
+
+    <!-- HEADER -->
+    <div class="card shadow-sm border-0 mb-4" style="border-left:6px solid #0d6efd;">
+        <div class="card-body">
+            <h2 class="fw-bold text-primary">📞 Contact NeuroScan</h2>
+            <p class="text-muted">
+                Une plateforme scientifique dédiée à l’analyse et à la recherche biomédicale.
+            </p>
+        </div>
+    </div>
+
+    <!-- EMAIL CARDS -->
+    <div class="row g-4 mb-4">
+        <div class="col-md-3">
+            <div class="card shadow-sm border-top border-4 border-primary text-center">
+                <div class="card-body">
+                    <h6 class="fw-bold">🧬 Recherche</h6>
+                    <p class="text-primary fw-bold">research@neuroscan.org</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-top border-4 border-success text-center">
+                <div class="card-body">
+                    <h6 class="fw-bold">💻 Support</h6>
+                    <p class="text-success fw-bold">support@neuroscan.org</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-top border-4 border-warning text-center">
+                <div class="card-body">
+                    <h6 class="fw-bold">📊 Analyse</h6>
+                    <p class="fw-bold" style="color:#f4b400;">analysis@neuroscan.org</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow-sm border-top border-4 border-dark text-center">
+                <div class="card-body">
+                    <h6 class="fw-bold">⚙️ Admin</h6>
+                    <p class="text-dark fw-bold">admin@neuroscan.org</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-header fw-bold text-white" style="background:#212529;">
+            📩 Formulaire de contact
+        </div>
+        <div class="card-body">
+
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-success">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+
+            <form method="post">
+                {% csrf_token %}
+
+                <div class="row mb-3">
+                    <div class="col-md-6">{{ form.name }}</div>
+                    <div class="col-md-6">{{ form.email }}</div>
+                </div>
+
+                <div class="mb-3">
+                    {{ form.subject }}
+                </div>
+
+                <div class="mb-3">
+                    {{ form.message }}
+                </div>
+
+                <button type="submit" class="btn btn-primary px-4">
+                    📤 Envoyer le message
+                </button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

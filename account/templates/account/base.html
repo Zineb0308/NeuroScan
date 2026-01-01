@@ -1,0 +1,94 @@
+{% load static %}
+{% load thumbnail %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <div id="header">
+        
+        <a href="{% url 'dashboard' %}" class="logo">
+            <img src="{% static 'images/logo.jpg' %}" alt="NeuroScan Logo">
+            NeuroScan
+        </a>
+
+        <div class="user-actions">
+            {% if request.user.is_authenticated %}
+                
+                <div class="dropdown">
+                    
+                    <div class="dropbtn">
+                        <div class="avatar-wrapper-header">
+                            {% if request.user.profile.photo %}
+                                {% thumbnail request.user.profile.photo 40x40 crop="smart" as thumb %}
+                                    <img src="{{ thumb.url }}" class="avatar-header" alt="Profile">
+                            {% else %}
+                                <div class="avatar-placeholder-header">
+                                    {{ request.user.username|make_list|first|upper }}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <span class="username-header">
+                            {{ request.user.username }} <span style="font-size: 0.8em;">▼</span>
+                        </span>
+                    </div>
+
+                    <div class="dropdown-content">
+                        
+                        <a href="{% url 'dashboard' %}" class="dropdown-item">
+                            <span class="icon">🏠</span> Tableau de bord
+                        </a>
+
+                        <a href="{% url 'edit' %}" class="dropdown-item">
+                            <span class="icon">👤</span> Modifier le profil
+                        </a>
+
+                        <hr> 
+
+                        <div class="dropdown-item google-item">
+                            <span class="icon">🌐</span>
+                            <div id="google_translate_element"></div>
+                        </div>
+                        
+                        <hr>
+
+                        <form action="{% url 'logout' %}" method="post" class="logout-form-dropdown">
+                            {% csrf_token %}
+                            <button type="submit" class="dropdown-item-btn">
+                                <span class="icon">🚪</span> Déconnexion
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            {% else %}
+                <a href="{% url 'login' %}" class="login-link">Se connecter</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'fr', 
+                includedLanguages: 'ar,en,fr', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+
+</body>
+</html>

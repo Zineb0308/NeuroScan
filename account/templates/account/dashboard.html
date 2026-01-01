@@ -1,0 +1,285 @@
+{% extends "account/base.html" %}
+{% load static %}
+{% load thumbnail %}
+
+{% block title %}NeuroScan Tableau de bord{% endblock %}
+
+{% block content %}
+<div class="dashboard-layout">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2 class="logo">Menu</h2>
+        </div>
+        
+        <ul class="main-menu">
+            <li class="active"><a href="{% url 'dashboard' %}">🏠 Tableau de bord</a></li>
+            <li><a href="{% url 'blog:post_list' %}">🧠 À propos de la maladie</a></li>
+            <li><a href="{% url 'scientific' %}">🔬 Recherche scientifique</a></li>
+            <li><a href="{% url 'data_analysis' %}">📊 Analyse de données</a></li>
+            <li><a href="{% url 'database' %}">🧫 Base de données</a></li>
+            <li><a href="{% url 'support' %}">💡 Sensibilisation & Soutien</a></li>
+            <li><a href="{% url 'tools' %}">🎓 Outils pédagogiques</a></li>
+            <li><a href="{% url 'community' %}">💬 Communauté scientifique</a></li>
+            <li><a href="{% url 'contact' %}">📞 Contact</a></li>
+            <li><a href="{% url 'password_change' %}">⚙️ Paramètres</a></li>
+        </ul>
+        
+        <div class="user-info">
+            <form action="{% url "logout" %}" method="post">
+                <p class="user-name">Bonjour, {{ request.user.username }}</p>
+                <button type="submit" class="logout-btn">Déconnexion</button>
+                {% csrf_token %}
+            </form>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        
+        <div class="header">
+            <h1 class="welcome-text">🌟 Bienvenue  {{ request.user.first_name|default:request.user.username }} sur NeuroScan 👋 !,
+
+Votre espace simple et clair pour comprendre, analyser et découvrir le neuroblastome 🧠.
+Explorez nos données, articles et outils pédagogiques pour en savoir plus facilement 📘.</h1>
+           
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <p class="card-title">Total Utilisateurs</p>
+                <h2 class="card-value">65</h2> 
+            </div>
+            <div class="card">
+                <p class="card-title">Articles (Neuro)</p>
+                <h2 class="card-value">4</h2> 
+            </div>
+            <div class="card">
+                <p class="card-title">Données Analysées</p>
+                <h2 class="card-value">56%</h2> 
+            </div>
+            <div class="card">
+                <p class="card-title">Trafic Aujourd'hui</p>
+                <h2 class="card-value">12k</h2> 
+            </div>
+        </div>
+
+        <div class="chart-card">
+            <h3>Statistiques d'utilisation (Vues/Mois)</h3>
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+new Chart(document.getElementById("myChart"), {
+    type: "line",
+    data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+        datasets: [{
+            label: 'Vues Mensuelles',
+            data: [10, 25, 15, 40, 35, 50, 45, 60],
+            borderColor: '#FFC107',
+            backgroundColor: 'rgba(255, 193, 7, 0.1)',
+            tension: 0.4,
+            fill: true,
+            pointBackgroundColor: '#FF9800',
+            pointBorderColor: '#fff'
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+            y: { beginAtZero: true, grid: { color: '#f0f0f0' }, ticks: { color: '#666' } },
+            x: { grid: { display: false }, ticks: { color: '#666' } }
+        }
+    }
+});
+</script>
+
+<style>
+/* 1. إعدادات الصفحة العامة */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3F4F6;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, content { display: none !important; margin: 0; padding: 0; }
+
+.dashboard-layout { display: flex; min-height: 100vh; }
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background-color: #FFFFFF;
+    border-right: 1px solid #E5E7EB;
+    padding: 20px 0;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #1a428a;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #FFC107;
+}
+
+.sidebar ul.main-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar li {
+    padding: 12px 25px;
+    font-size: 0.95em;
+    color: #555;
+    transition: all 0.3s;
+    border-left: 4px solid transparent;
+    font-weight: 500;
+}
+
+.sidebar li a { color: inherit; text-decoration: none; display: block; }
+
+.sidebar li:hover:not(.active) {
+    background-color: #FFF8E1;
+    color: #1a428a;
+}
+
+.sidebar li.active {
+    background-color: #FFF8E1;
+    color: #1a428a;
+    border-left: 4px solid #FFC107;
+}
+
+.user-info {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #E5E7EB;
+    background-color: #FAFAFA;
+}
+
+.logout-btn {
+    background-color: #FFC107;
+    color: #1a428a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 280px; 
+    flex-grow: 1;
+    padding: 40px;
+    width: calc(100% - 280px);
+}
+
+.header {
+    background-color: #FFFFFF;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #c5af34;
+}
+
+/* Profile */
+.top-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: background-color 0.2s;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #FFC107;
+}
+
+.avatar-placeholder {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #1a428a;
+    color: #FFC107;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 2px solid #FFC107;
+}
+
+.profile-info-text {
+    text-align: right;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    border: 1px solid #F0F0F0;
+    border-top: 4px solid #FFC107;
+}
+
+.card-value {
+    font-size: 2.2em;
+    font-weight: 800;
+    color: #1a428a;
+    margin: 0;
+}
+
+.chart-card {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    border: 1px solid #F0F0F0;
+    height: 450px;
+}
+</style>
+{% endblock %}
