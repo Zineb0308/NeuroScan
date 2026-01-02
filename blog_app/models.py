@@ -72,13 +72,15 @@ class Comment(models.Model):
         return f'Comment by {self.name} on {self.post}' 
 
 class ResearchArticle(models.Model):
-    title = models.CharField(max_length=200)
-    summary = models.TextField(blank=True, null=True)
+    title = models.CharField(max_length=255)
+    description = models.TextField(blank=True)
     pdf = models.FileField(upload_to='research_pdfs/')
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title
+
+
 
 
 # Create your models here.

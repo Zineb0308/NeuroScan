@@ -1,123 +1,76 @@
 {% extends "account/base.html" %}
 {% load static %}
 
-{% block title %}Support – NeuroScan{% endblock %}
+{% block title %}Support & Espoir – NeuroScan{% endblock %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/support.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid py-4 support-page">
+<div class="container py-4 support-page">
 
-    <!-- HEADER -->
-    <div class="card support-header mb-4">
-        <div class="card-body">
-            <h2>🆘 Support & Assistance</h2>
-            <p>
-                Cette section est dédiée à l’accompagnement des utilisateurs de
-                <strong>NeuroScan</strong>, qu’ils soient étudiants, chercheurs ou
-                professionnels de la bio-informatique.
-            </p>
+    <div class="header-section mb-5 text-start">
+        <h1 class="fw-bold display-5 mb-3"><span class="ribbon-icon">🎗️</span> NeuroScan Support & Espoir</h1>
+        <p class="fs-4 text-secondary mb-4">Soutenir la science, partager l'espoir, transformer des vies.</p>
+        
+        <div class="sensibilisation-info">
+            <h3 class="fw-bold mb-3"><i class="fa-solid fa-microscope"></i> Sensibilisation & Recherche</h3>
+            <ul class="info-list-inline">
+                <li><i class="fa-solid fa-circle-check"></i> Mécanismes génétiques.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Innovations thérapeutiques.</li>
+            </ul>
         </div>
     </div>
 
-    <!-- TYPES DE SUPPORT -->
-    <div class="support-container mb-4">
-
-        <div class="support-card">
-            <h3>🎓 Support académique</h3>
-            <p>
-                Aide à la compréhension des concepts en génomique,
-                transcriptomique et analyse de données biologiques.
-            </p>
-        </div>
-
-        <div class="support-card">
-            <h3>💻 Support technique</h3>
-            <p>
-                Assistance liée à l’utilisation des outils,
-                à l’importation des données et aux erreurs techniques.
-            </p>
-        </div>
-
-        <div class="support-card">
-            <h3>📊 Support analytique</h3>
-            <p>
-                Orientation dans l’interprétation des résultats
-                statistiques et biologiques.
-            </p>
-        </div>
-
-    </div>
-
-    <!-- TABLEAU -->
-    <div class="card shadow-sm mb-4">
-        <div class="card-header support-table-title">
-            📋 Services de support disponibles
-        </div>
-
-        <div class="table-responsive">
-            <table class="table support-table mb-0">
-                <thead>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                        <th>Public cible</th>
-                        <th>Disponibilité</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Assistance pédagogique</td>
-                        <td>
-                            Explication des méthodes d’analyse
-                            et des pipelines bioinformatiques.
-                        </td>
-                        <td>Étudiants / Doctorants</td>
-                        <td><span class="badge bg-success">Disponible</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>Support technique</td>
-                        <td>
-                            Résolution des problèmes liés
-                            aux outils et à la plateforme.
-                        </td>
-                        <td>Tous les utilisateurs</td>
-                        <td><span class="badge bg-success">Disponible</span></td>
-                    </tr>
-
-                    <tr>
-                        <td>Interprétation des résultats</td>
-                        <td>
-                            Aide à la lecture des graphiques,
-                            heatmaps et analyses statistiques.
-                        </td>
-                        <td>Chercheurs</td>
-                        <td><span class="badge bg-warning text-dark">Sur demande</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <!-- CONTACT -->
-    <div class="card support-contact">
-        <div class="card-body">
-            <h5>📨 Besoin d’aide ?</h5>
-            <p>
-                Pour toute demande spécifique ou problème technique,
-                veuillez contacter l’équipe NeuroScan.
-            </p>
-            <a href="{% url 'account:contact' %}" class="btn btn-primary">
-                Contacter le support
+    <div class="video-grid-horizontal mb-5">
+        <div class="video-item-small shadow-sm border-blue">
+            <a href="https://www.youtube.com/watch?v=T3D-EV_KycE" target="_blank">
+                <div class="thumb-container">
+                    <img src="https://img.youtube.com/vi/T3D-EV_KycE/mqdefault.jpg" alt="Video 1">
+                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                </div>
             </a>
+            <div class="video-title-mini">La pathologie (Osmosis)</div>
+        </div>
+
+        <div class="video-item-small shadow-sm border-blue">
+            <a href="https://www.youtube.com/watch?v=QntpVDFt-64" target="_blank">
+                <div class="thumb-container">
+                    <img src="https://img.youtube.com/vi/QntpVDFt-64/mqdefault.jpg" alt="Video 2">
+                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                </div>
+            </a>
+            <div class="video-title-mini">Nouvelles thérapies</div>
+        </div>
+    </div>
+
+    <div class="text-start mb-4">
+        <h3 class="text-danger fw-bold"><i class="fa-solid fa-heart"></i> Histoires de Courage</h3>
+    </div>
+    
+    <div class="video-grid-horizontal">
+        <div class="video-item-small shadow-sm border-red">
+            <a href="https://www.youtube.com/watch?v=mg7dOpu7_qQ" target="_blank">
+                <div class="thumb-container">
+                    <img src="https://img.youtube.com/vi/mg7dOpu7_qQ/mqdefault.jpg" alt="Isla">
+                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                </div>
+            </a>
+            <div class="video-title-mini fw-bold text-danger">Le combat d'Isla</div>
+        </div>
+
+        <div class="video-item-small shadow-sm border-red">
+            <a href="https://www.youtube.com/watch?v=ZS0P6HQT5-U" target="_blank">
+                <div class="thumb-container">
+                    <img src="https://img.youtube.com/vi/ZS0P6HQT5-U/mqdefault.jpg" alt="Evelyn">
+                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                </div>
+            </a>
+            <div class="video-title-mini fw-bold text-danger">Pour Evelyn</div>
         </div>
     </div>
 
 </div>
 {% endblock %}
-
-
-

@@ -1,6 +1,9 @@
 from django.urls import path, include  
 from django.contrib.auth import views as auth_views
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
+
 app_name = 'account'
 urlpatterns = [
     # مسارات تسجيل الدخول والخروج
@@ -24,5 +27,10 @@ urlpatterns = [
     path('tools/', views.tools, name='tools'),
     path('community/', views.community, name='community'),
     path('contact/', views.contact_view, name='contact'),
-    
+    path("scientific/mutations/", views.mutation_analysis, name="mutation_analysis"),
+    path("scientific/bioinformatics/", views.bioinformatics_analysis, name="bioinformatics_analysis"),
+    path("scientific/rna-seq/", views.rna_seq_analysis, name="rna_seq_analysis"),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

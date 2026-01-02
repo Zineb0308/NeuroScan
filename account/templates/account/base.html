@@ -1,81 +1,111 @@
-{% load static %}
+{% load static i18n %}
 {% load thumbnail %}
 
 <!DOCTYPE html>
-<html>
+<html lang="{{ LANGUAGE_CODE }}">
 <head>
-    <title>{% block title %}{% endblock %}</title>
-    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} | NeuroScan</title>
+
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <!-- Extra CSS -->
     {% block extra_css %}{% endblock %}
 </head>
+
 <body>
-    <div id="header">
-        <a href="{% url 'account:dashboard' %}" class="logo">
-            <img src="{% static 'images/logo.jpg' %}" alt="NeuroScan Logo">
-            NeuroScan
-        </a>
 
-        <div class="user-actions">
-            {% if request.user.is_authenticated %}
-                
-                <div class="dropdown">
-                    
-                    <div class="dropbtn">
-                        <div class="avatar-wrapper-header">
-                            {% if request.user.profile.photo %}
-                                {% thumbnail request.user.profile.photo "40x40" crop="smart" as thumb %}
-                                    <img src="{{ thumb.url }}" class="avatar-header" alt="Profile">
-                            {% else %}
-                                <div class="avatar-placeholder-header">
-                                    {{ request.user.username|make_list|first|upper }}
-                                </div>
-                            {% endif %}
+<!-- ===== HEADER ===== -->
+<div id="header">
+    <a href="{% url 'account:dashboard' %}" class="logo">
+        <img src="{% static 'images/logo.jpg' %}" alt="NeuroScan Logo">
+        <span>NeuroScan</span>
+    </a>
+
+    <div class="user-actions">
+        {% if request.user.is_authenticated %}
+
+        <div class="dropdown">
+            <div class="dropbtn">
+
+                <div class="avatar-wrapper-header">
+                    {% if request.user.profile.photo %}
+                        {% thumbnail request.user.profile.photo 40x40 crop="smart" as thumb %}
+                        <img src="{{ thumb.url }}" class="avatar-header" alt="Profile">
+                    {% else %}
+                        <div class="avatar-placeholder-header">
+                            {{ request.user.username|make_list|first|upper }}
                         </div>
-                        
-                        <span class="username-header">
-                            {{ request.user.username }} <span style="font-size: 0.8em;">▼</span>
-                        </span>
-                    </div>
-
-                    <div class="dropdown-content">
-                        <a href="{% url 'account:dashboard' %}" class="dropdown-item">
-                            <span class="icon">🏠</span> Tableau de bord
-                        </a>
-
-                        <a href="{% url 'account:edit' %}" class="dropdown-item">
-                            <span class="icon">👤</span> Modifier le profil
-                        </a>
-
-                        <hr> 
-
-                        <div class="dropdown-item google-item">
-                            <span class="icon">🌐</span>
-                            <div id="google_translate_element"></div>
-                        </div>
-                        
-                        <hr>
-
-                        <form action="{% url 'account:logout' %}" method="post" class="logout-form-dropdown">
-                            {% csrf_token %}
-                            <button type="submit" class="dropdown-item-btn">
-                                <span class="icon">🚪</span> Déconnexion
-                            </button>
-                        </form>
-                    </div>
+                    {% endif %}
                 </div>
 
-            {% else %}
-                <a href="{% url 'account:login' %}" class="login-link">Se connecter</a>
-            {% endif %}
-        </div>
-    </div>
+                <span class="username-header">
+                    {{ request.user.username }}
+                    <span style="font-size: 0.8em;">▼</span>
+                </span>
+            </div>
 
-    <div id="content">
-        {% block content %}
-        {% endblock %}
+            <div class="dropdown-content">
+                <a href="{% url 'account:dashboard' %}" class="dropdown-item">
+                    <span class="icon">🏠</span> Tableau de bord
+                </a>
+
+                <a href="{% url 'account:edit' %}" class="dropdown-item">
+                    <span class="icon">👤</span> Modifier le profil
+                </a>
+
+                <hr>
+
+                <div class="dropdown-item google-item">
+                    <span class="icon">🌐</span>
+                    <div id="google_translate_element"></div>
+                </div>
+
+                <hr>
+
+                <form action="{% url 'account:logout' %}" method="post" class="logout-form-dropdown">
+                    {% csrf_token %}
+                    <button type="submit" class="dropdown-item-btn">
+                        <span class="icon">🚪</span> Déconnexion
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        {% else %}
+            <a href="{% url 'account:login' %}" class="login-link">Se connecter</a>
+        {% endif %}
     </div>
+</div>
+
+<!-- ===== CONTENT ===== -->
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+
+<!-- ===== GOOGLE TRANSLATE ===== -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {
+                pageLanguage: 'fr',
+                includedLanguages: 'ar,en,fr',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            },
+            'google_translate_element'
+        );
+    }
+</script>
+
+<script
+    type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+{% block extra_js %}{% endblock %}
 
 </body>
 </html>
-    
-    

@@ -1,69 +1,90 @@
 {% extends "account/base.html" %}
 {% load static %}
 
-{% block title %}Recherche scientifique - NeuroScan{% endblock %}
+{% block title %}Recherche Scientifique | NeuroScan{% endblock %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'css/scientific.css' %}">
+<link rel="stylesheet" href="{% static 'css/scientific.css' %}">
 {% endblock %}
 
 {% block content %}
-<div class="scientific-container">
-    <section class="research-section">
-        <h2>🔬 Recherche scientifique</h2>
-        <p>Ce volet est dédié à la recherche scientifique autour du <strong>neuroblastome</strong>. Il vise à présenter des travaux récents.</p>
-    </section>
 
-    <section class="research-section">
-        <h3>📄 Articles scientifiques</h3>
-        <ul class="articles-list">
-          {% for article in articles %}
-<li>
-    <strong>Titre :</strong> {{ article.title }}<br>
-    {% if article.summary %}
-        <p><strong>Résumé :</strong> {{ article.summary|truncatewords:20 }}</p>
-    {% endif %}
-    <div class="article-actions">
-        {% if article.pdf %}
-            <a href="{{ article.pdf.url }}" class="btn-read" target="_blank">Lire l'article</a>
-        {% else %}
-            <a href="#" class="btn-read">Lien indisponible</a>
-        {% endif %}
-    </div>
-</li>
-{% empty %}
-    <li>Aucun article scientifique n'est disponible pour le moment.</li>
-{% endfor %}
-        </ul>
-    </section>
+<!-- ================= HEADER ================= -->
+<section class="scientific-header">
+    <h1>Recherche Scientifique</h1>
+    <p>
+        Plateforme d’analyse avancée du <strong>neuroblastome</strong> intégrant
+        la génomique, la transcriptomique et la bioinformatique.
+    </p>
+</section>
 
-    <section class="research-section">
-        <h3>🧪 Projets de recherche</h3>
-        <div class="project-box">
-            <h4>Analyse intégrative multi-omique</h4>
-            <p>Ce projet repose sur l'intégration des données génomiques.</p>
+<!-- ================= LAB ================= -->
+<section class="lab-section">
+    <h2>🧪 Scientific Analysis Lab</h2>
+
+    <div class="grid-container">
+
+        <!-- ========= MUTATION ========= -->
+        <div class="analysis-card">
+            <a href="{% url 'account:mutation_analysis' %}" class="octagon-box">
+                <img src="{% static 'images/mutation.jpg' %}" alt="Mutation Analysis">
+                <div class="octagon-overlay"></div>
+                <div class="image-label">🧬 Mutation </div>
+            </a>
+
+            
         </div>
-    </section>
 
-    <section class="research-section">
-        <h3>⚙️ Méthodologies utilisées</h3>
-        <ul>
-            <li>Analyse RNA-Seq (Transcriptomique)</li>
-            <li>Bioinformatique et statistiques avancées</li>
-        </ul>
-    </section>
+        <!-- ========= BIOINFORMATICS ========= -->
+        <div class="analysis-card">
+            <a href="{% url 'account:bioinformatics_analysis' %}" class="octagon-box">
+                <img src="{% static 'images/bios.jpg' %}" alt="Bioinformatics">
+                <div class="octagon-overlay"></div>
+                <div class="image-label">🧪 Bioinformatics</div>
+            </a>
 
-    <section class="research-section">
-        <h3>📊 Résultats clés</h3>
-        <ul>
-            <li>Heatmaps d'expression génique montrant les clusters de patients.</li>
-            <li>Volcano plots identifiant les gènes significativement sur-exprimés.</li>
-        </ul>
-    </section>
+           
+        </div>
 
-    <section class="research-section">
-        <h3>🌍 Collaborations et Sources</h3>
-        <p>Nos recherches s'appuient sur des bases de données internationales (GEO, TCGA).</p>
-    </section>
-</div>
+        <!-- ========= RNA SEQ ========= -->
+        <div class="analysis-card">
+            <a href="{% url 'account:rna_seq_analysis' %}" class="octagon-box">
+                <img src="{% static 'images/RNA.jpg' %}" alt="RNA-Seq">
+                <div class="octagon-overlay"></div>
+                <div class="image-label">🧫 RNA-Seq </div>
+            </a>
+
+            
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= ARTICLES PDF ================= -->
+<section class="lab-section">
+    <h2>📚 Publications & Articles</h2>
+
+    <div class="grid-container">
+        {% for article in articles %}
+            <div class="analysis-card">
+                <div class="article-card">
+                    <h4>{{ article.title }}</h4>
+                    <p>{{ article.summary|truncatewords:20 }}</p>
+
+                    {% if article.pdf %}
+                        <a href="{{ article.pdf.url }}" target="_blank" class="read-article-btn">
+                            📥 Télécharger PDF
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        {% empty %}
+            <p class="text-muted">Aucun article disponible pour le moment.</p>
+        {% endfor %}
+    </div>
+</section>
+
 {% endblock %}
+
+
+

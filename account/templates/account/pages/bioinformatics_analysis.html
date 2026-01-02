@@ -1,0 +1,48 @@
+{% extends "account/base.html" %}
+{% load static %}
+
+{% block title %}Bioinformatics Analysis | NeuroScan{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/bioinformatics_analysis.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="analysis-hero bio-bg">
+    <h1>Bioinformatics Analysis</h1>
+    <p>
+        Approches computationnelles intégratives pour l’analyse
+        des données génomiques et transcriptomiques du neuroblastome.
+    </p>
+</section>
+
+<section class="analysis-container">
+
+    <div class="info-card">
+        <h3>🧬 Pipelines bioinformatiques</h3>
+        <p>
+            Les données sont traitées via des pipelines reproductibles
+            intégrant le contrôle qualité, l’alignement, la normalisation
+            et l’annotation biologique.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <h3>⚙️ Outils utilisés</h3>
+        <ul>
+            <li>FastQC / MultiQC</li>
+            <li>STAR / HISAT2</li>
+            <li>DESeq2 / edgeR</li>
+            <li>Enrichissement GO & KEGG</li>
+        </ul>
+    </div>
+
+    <div class="chart-placeholder">
+        <h4>PCA – Séparation des groupes</h4>
+        <p>(Patients vs contrôles)</p>
+    </div>
+
+</section>
+
+{% endblock %}

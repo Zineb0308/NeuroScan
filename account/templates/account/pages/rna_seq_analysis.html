@@ -1,0 +1,47 @@
+{% extends "account/base.html" %}
+{% load static %}
+
+{% block title %}RNA-Seq Analysis | NeuroScan{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/rna_seq_analysis.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="analysis-hero rna-bg">
+    <h1>RNA-Seq Analysis</h1>
+    <p>
+        Étude de l’expression génique différentielle afin d’identifier
+        les signatures transcriptomiques associées au neuroblastome.
+    </p>
+</section>
+
+<section class="analysis-container">
+
+    <div class="info-card">
+        <h3>🧫 Expression différentielle</h3>
+        <p>
+            L’analyse RNA-Seq permet de détecter les gènes surexprimés
+            ou sous-exprimés impliqués dans la progression tumorale.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <h3>📈 Résultats clés</h3>
+        <ul>
+            <li>Gènes différentiellement exprimés (DEGs)</li>
+            <li>Heatmaps d’expression</li>
+            <li>Clusters tumoraux</li>
+            <li>Voies biologiques dérégulées</li>
+        </ul>
+    </div>
+
+    <div class="chart-placeholder">
+        <h4>Heatmap – Expression génique</h4>
+        <p>(Clusters transcriptomiques)</p>
+    </div>
+
+</section>
+
+{% endblock %}

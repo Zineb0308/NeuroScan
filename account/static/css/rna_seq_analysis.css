@@ -1,0 +1,28 @@
+.rna-bg {
+    background: linear-gradient(135deg, #56c584, #57c581, #22c55e);
+}
+
+.analysis-container {
+    display: grid;
+    gap: 40px;
+}
+
+.info-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+}
+
+.info-card h3 {
+    color: #15803d;
+    margin-bottom: 15px;
+}
+
+.chart-placeholder {
+    background: #dcfce7;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    border: 2px dashed #22c55e;
+}

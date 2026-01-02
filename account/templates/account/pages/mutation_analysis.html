@@ -1,0 +1,50 @@
+{% extends "account/base.html" %}
+{% load static %}
+
+{% block title %}Mutation Analysis | NeuroScan{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/mutation_analysis.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="analysis-hero mutation-bg">
+    <h1>Mutation Analysis</h1>
+    <p>
+        Identification des mutations génétiques clés impliquées
+        dans le <strong>neuroblastome</strong> afin de comprendre
+        les mécanismes oncogéniques et orienter les thérapies ciblées.
+    </p>
+</section>
+
+<section class="analysis-container">
+
+    <div class="info-card">
+        <h3>🔬 Contexte biologique</h3>
+        <p>
+            Le neuroblastome est associé à des mutations récurrentes
+            affectant des gènes tels que <strong>ALK</strong>, <strong>MYCN</strong>
+            et <strong>TP53</strong>. Ces altérations génétiques influencent
+            la prolifération cellulaire et la résistance aux traitements.
+        </p>
+    </div>
+
+    <div class="info-card">
+        <h3>📊 Analyses réalisées</h3>
+        <ul>
+            <li>Analyse des variants somatiques (SNVs / INDELs)</li>
+            <li>Fréquence des mutations par gène</li>
+            <li>Comparaison patients à haut vs bas risque</li>
+            <li>Annotation fonctionnelle (oncogènes / suppresseurs)</li>
+        </ul>
+    </div>
+
+    <div class="chart-placeholder">
+        <h4>Volcano Plot – Mutations significatives</h4>
+        <p>(Visualisation des gènes les plus altérés)</p>
+    </div>
+
+</section>
+
+{% endblock %}

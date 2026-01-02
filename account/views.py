@@ -104,3 +104,14 @@ def edit(request):
         user_form = UserEditForm(instance=request.user)
         profile_form = ProfileEditForm(instance=request.user.profile)
     return render(request, 'account/edit.html', {'user_form': user_form, 'profile_form': profile_form}) 
+
+def mutation_analysis(request):
+    return render(request, "account/pages/mutation_analysis.html")
+
+
+def bioinformatics_analysis(request):
+    return render(request, "account/pages/bioinformatics_analysis.html")
+
+
+def rna_seq_analysis(request):
+    return render(request, "account/pages/rna_seq_analysis.html")
