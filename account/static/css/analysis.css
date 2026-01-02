@@ -1,0 +1,81 @@
+/* container principal */
+.analysis-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* header */
+.analysis-header {
+    border-left: 6px solid #FFC107;
+}
+
+.analysis-header h2 {
+    color: #1a428a;
+}
+
+.analysis-header p {
+    color: #555;
+}
+
+/* cartes statistiques */
+.stat-card {
+    background: #f8fbff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+}
+
+.stat-card h6 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stat-card h2 {
+    color: #1a428a;
+    font-weight: bold;
+}
+
+/* titres sections */
+.section-title {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #1a428a;
+}
+
+/* tableau */
+.analysis-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.analysis-table th,
+.analysis-table td {
+    border: 2px solid #1a428a;
+    padding: 14px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.analysis-table th {
+    background-color: #1a428a;
+    color: #FFC107;
+}
+
+.analysis-table tr:nth-child(even) {
+    background-color: #f0f7ff;
+}
+
+/* zone graphique */
+.analysis-chart {
+    margin-top: 40px;
+    padding: 30px;
+    border: 2px dashed #1a428a;
+    text-align: center;
+    color: #555;
+    border-radius: 12px;
+    font-size: 1.1em;
+}

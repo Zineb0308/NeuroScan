@@ -1,0 +1,83 @@
+/* ===============================
+   Support – NeuroScan
+   =============================== */
+
+.support-header {
+    border-left: 8px solid #f4b400;
+    background: #ffffff;
+}
+
+.support-header h2 {
+    color: #1a428a;
+    font-weight: bold;
+}
+
+.support-header p {
+    color: #555;
+}
+
+/* SUPPORT TYPES */
+.support-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.support-card {
+    background: #ffffff;
+    border-left: 6px solid #1a428a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-5px);
+}
+
+.support-card h3 {
+    color: #1a428a;
+    margin-bottom: 12px;
+}
+
+.support-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* TABLE */
+.support-table-title {
+    background: #1a428a;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.support-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.support-table th,
+.support-table td {
+    border: 2px solid #f4b400;
+    padding: 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.support-table th {
+    background: #f4b400;
+    color: #1a428a;
+    font-weight: bold;
+}
+
+.support-table tbody tr:hover td {
+    background: #eef4ff;
+}
+
+/* CONTACT */
+.support-contact {
+    border-left: 6px solid #1a428a;
+}
+

@@ -1,113 +1,79 @@
 {% extends "account/base.html" %}
 {% load static %}
 
-{% block content %}
-<div class="container-fluid py-4">
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/analysis.css' %}">
+{% endblock %}
 
-    <div class="card shadow-sm border-0 mb-4" style="border-left: 6px solid #f4b400;">
+{% block content %}
+<div class="analysis-container container-fluid py-4">
+
+    <!-- HEADER -->
+    <div class="card shadow-sm border-0 mb-4 analysis-header">
         <div class="card-body">
-            <h2 class="fw-bold text-primary">📊 Analyse de données</h2>
-            <p class="mt-3 text-muted">
-                Cette section de <strong>NeuroScan</strong> est dédiée à l’analyse approfondie des données biologiques et cliniques liées au neuroblastome. Elle permet de comprendre, comparer et interpréter les données afin d’identifier des biomarqueurs et des pistes thérapeutiques.
+            <h2 class="fw-bold">📊 Analyse de données</h2>
+            <p>
+                Cette section de <strong>NeuroScan</strong> est dédiée à l’analyse
+                approfondie des données biologiques et cliniques liées au neuroblastome.
             </p>
         </div>
     </div>
 
+    <!-- STAT CARDS -->
     <div class="row g-3 mb-4">
         <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body text-center">
-                    <h6 class="text-muted">Données analysées</h6>
-                    <h2 class="fw-bold text-primary">56%</h2>
-                </div>
+            <div class="stat-card">
+                <h6>Données analysées</h6>
+                <h2>56%</h2>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body text-center">
-                    <h6 class="text-muted">Échantillons</h6>
-                    <h2 class="fw-bold text-primary">120</h2>
-                </div>
+            <div class="stat-card">
+                <h6>Échantillons</h6>
+                <h2>120</h2>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body text-center">
-                    <h6 class="text-muted">Gènes significatifs</h6>
-                    <h2 class="fw-bold text-primary">34</h2>
-                </div>
+            <div class="stat-card">
+                <h6>Gènes significatifs</h6>
+                <h2>34</h2>
             </div>
         </div>
     </div>
 
-    <h4 class="fw-bold mb-3 text-dark">📂 Types de données</h4>
-    <div class="row g-3 mb-4">
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-top border-4 border-primary">
-                <div class="card-body">
-                    <h5 class="fw-bold">🧬 Génomique</h5>
-                    <p class="text-muted">Analyse des mutations génétiques, variations structurelles et anomalies chromosomiques.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-top border-4 border-warning">
-                <div class="card-body">
-                    <h5 class="fw-bold">🧪 Transcriptomique</h5>
-                    <p class="text-muted">Étude de l’expression génique à partir des données RNA-Seq pour détecter les gènes différentiellement exprimés.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-top border-4 border-secondary">
-                <div class="card-body">
-                    <h5 class="fw-bold">🏥 Clinique</h5>
-                    <p class="text-muted">Données liées aux patients : âge, stade, traitement, évolution et survie.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- TABLE -->
+    <h4 class="section-title">📂 Types de données</h4>
 
-    <div class="card shadow-sm mb-4">
-        <div class="card-header bg-primary text-white fw-bold">🔄 Pipeline d’analyse NeuroScan</div>
-        <div class="card-body">
-            <ol class="mb-0">
-                <li>Collecte des données (GEO, TCGA, SRA)</li>
-                <li>Contrôle qualité (FastQC, filtering)</li>
-                <li>Normalisation et prétraitement</li>
-                <li>Analyse statistique (malade vs sain)</li>
-                <li>Visualisation et interprétation biologique</li>
-            </ol>
-        </div>
-    </div>
+    <table class="analysis-table">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Objectif</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>🧬 Génomique</td>
+                <td>Mutations, CNV, anomalies chromosomiques</td>
+                <td>Identifier les altérations génétiques</td>
+            </tr>
+            <tr>
+                <td>🧪 Transcriptomique</td>
+                <td>Données RNA-Seq</td>
+                <td>Gènes différentiellement exprimés</td>
+            </tr>
+            <tr>
+                <td>🏥 Clinique</td>
+                <td>Données patient</td>
+                <td>Corrélation clinique-biologique</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <div class="card shadow-sm mb-4">
-        <div class="card-header fw-bold" style="background-color:#f4b400;">📈 Visualisations disponibles</div>
-        <div class="card-body">
-            <div class="row text-center">
-                <div class="col-md-3">📊 Histogrammes</div>
-                <div class="col-md-3">🔥 Heatmaps</div>
-                <div class="col-md-3">📈 PCA</div>
-                <div class="col-md-3">🧬 Expression génique</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card shadow-sm mb-4">
-        <div class="card-header bg-dark text-white fw-bold">🛠️ Outils utilisés</div>
-        <div class="card-body">
-            <span class="badge bg-primary me-1">Python</span>
-            <span class="badge bg-secondary me-1">Pandas</span>
-            <span class="badge bg-success me-1">NumPy</span>
-            <span class="badge bg-warning text-dark me-1">Matplotlib</span>
-            <span class="badge bg-info text-dark me-1">R / DESeq2</span>
-            <span class="badge bg-dark me-1">Galaxy</span>
-        </div>
-    </div>
-
-    <div class="text-end">
-        <a href="#" class="btn btn-primary">📊 Explorer</a>
-        <a href="#" class="btn btn-outline-secondary">📥 Télécharger</a>
+    <!-- CHART PLACEHOLDER -->
+    <div class="analysis-chart">
+        📈 Zone réservée aux graphiques (PCA, Heatmap, Expression)
     </div>
 
 </div>

@@ -3,95 +3,68 @@
 
 {% block title %}Contact – NeuroScan{% endblock %}
 
-{% block content %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
 
-<div class="container-fluid py-4" style="background:#f8f9fa;">
+{% block content %}
+<div class="contact-container">
 
     <!-- HEADER -->
-    <div class="card shadow-sm border-0 mb-4" style="border-left:6px solid #0d6efd;">
-        <div class="card-body">
-            <h2 class="fw-bold text-primary">📞 Contact NeuroScan</h2>
-            <p class="text-muted">
-                Une plateforme scientifique dédiée à l’analyse et à la recherche biomédicale.
-            </p>
-        </div>
+    <div class="contact-header">
+        <h2>📞 Contact NeuroScan</h2>
+        <p>
+            Une plateforme scientifique dédiée à l’analyse et à la recherche biomédicale.
+        </p>
     </div>
 
-    <!-- EMAIL CARDS -->
-    <div class="row g-4 mb-4">
-        <div class="col-md-3">
-            <div class="card shadow-sm border-top border-4 border-primary text-center">
-                <div class="card-body">
-                    <h6 class="fw-bold">🧬 Recherche</h6>
-                    <p class="text-primary fw-bold">research@neuroscan.org</p>
-                </div>
-            </div>
+    <!-- EMAILS -->
+    <div class="contact-emails-grid">
+        <div class="email-card research">
+            <h6>🧬 Recherche</h6>
+            <p>asmaebks@gmail.com</p>
         </div>
 
-        <div class="col-md-3">
-            <div class="card shadow-sm border-top border-4 border-success text-center">
-                <div class="card-body">
-                    <h6 class="fw-bold">💻 Support</h6>
-                    <p class="text-success fw-bold">support@neuroscan.org</p>
-                </div>
-            </div>
+        <div class="email-card support">
+            <h6>💻 Support</h6>
+            <p>gelecegindehalari@gmail.com</p>
         </div>
 
-        <div class="col-md-3">
-            <div class="card shadow-sm border-top border-4 border-warning text-center">
-                <div class="card-body">
-                    <h6 class="fw-bold">📊 Analyse</h6>
-                    <p class="fw-bold" style="color:#f4b400;">analysis@neuroscan.org</p>
-                </div>
-            </div>
+        <div class="email-card analysis">
+            <h6>📊 Analyse</h6>
+            <p>ayaamerahi772@gmail.com</p>
         </div>
 
-        <div class="col-md-3">
-            <div class="card shadow-sm border-top border-4 border-dark text-center">
-                <div class="card-body">
-                    <h6 class="fw-bold">⚙️ Admin</h6>
-                    <p class="text-dark fw-bold">admin@neuroscan.org</p>
-                </div>
-            </div>
+        <div class="email-card admin">
+            <h6>⚙️ Administration</h6>
+            <p>admin.neuroscan@gmail.com</p>
         </div>
     </div>
 
     <!-- FORM -->
-    <div class="card shadow-sm mb-4">
-        <div class="card-header fw-bold text-white" style="background:#212529;">
-            📩 Formulaire de contact
-        </div>
-        <div class="card-body">
+    <div class="contact-form-card">
+        <h4>📩 Formulaire de contact</h4>
 
-            {% if messages %}
-                {% for message in messages %}
-                    <div class="alert alert-success">{{ message }}</div>
-                {% endfor %}
-            {% endif %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="success-message">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
 
-            <form method="post">
-                {% csrf_token %}
+        <form method="post" class="contact-form">
+            {% csrf_token %}
 
-                <div class="row mb-3">
-                    <div class="col-md-6">{{ form.name }}</div>
-                    <div class="col-md-6">{{ form.email }}</div>
-                </div>
+            <div class="form-row">
+                {{ form.name }}
+                {{ form.email }}
+            </div>
 
-                <div class="mb-3">
-                    {{ form.subject }}
-                </div>
+            {{ form.subject }}
+            {{ form.message }}
 
-                <div class="mb-3">
-                    {{ form.message }}
-                </div>
-
-                <button type="submit" class="btn btn-primary px-4">
-                    📤 Envoyer le message
-                </button>
-            </form>
-        </div>
+            <button type="submit">📤 Envoyer le message</button>
+        </form>
     </div>
 
 </div>
-
 {% endblock %}

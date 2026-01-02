@@ -3,15 +3,19 @@
 
 {% block title %}Outils pédagogiques | NeuroScan{% endblock %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/tools.css' %}">
+{% endblock %}
+
 {% block content %}
 <div class="container-fluid px-4 py-4">
 
     <!-- HEADER -->
     <div class="row mb-4">
         <div class="col-12">
-            <div class="card shadow-sm" style="border-left:8px solid #f4b400;">
+            <div class="card shadow-sm tools-header">
                 <div class="card-body">
-                    <h2 class="fw-bold text-primary">🎓 Outils pédagogiques</h2>
+                    <h2 class="fw-bold">🎓 Outils pédagogiques</h2>
                     <p class="text-muted mt-2 mb-0">
                         Les outils pédagogiques de <strong>NeuroScan</strong> visent à faciliter
                         l’apprentissage de l’analyse des données biologiques,
@@ -24,94 +28,63 @@
     </div>
 
     <!-- TABLE -->
-  <div class="table-responsive">
-    <table class="table mb-0"
-           style="border-collapse: collapse; width:100%;">
+    <div class="table-responsive">
+        <table class="table tools-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom de l’outil</th>
+                    <th>Description pédagogique</th>
+                    <th>Type de données</th>
+                    <th>Technologies</th>
+                    <th>Niveau</th>
+                    <th>Accès</th>
+                </tr>
+            </thead>
 
-        <thead style="background:#f8f9fa;">
-            <tr>
-                <th style="border:2px solid #333;" class="text-center align-middle">ID</th>
-                <th style="border:2px solid #333;" class="text-center align-middle">Nom de l’outil</th>
-                <th style="border:2px solid #333;" class="text-center align-middle">Description pédagogique</th>
-                <th style="border:2px solid #333;" class="text-center align-middle">Type de données</th>
-                <th style="border:2px solid #333;" class="text-center align-middle">Technologies</th>
-                <th style="border:2px solid #333;" class="text-center align-middle">Niveau</th>
-                <th style="border:2px solid #333;" class="text-center align-middle">Accès</th>
-            </tr>
-        </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Introduction RNA-Seq</td>
+                    <td>
+                        Guide pédagogique expliquant les bases du RNA-Seq
+                        et son application dans l’étude du neuroblastome.
+                    </td>
+                    <td>Transcriptomique</td>
+                    <td>Python, Galaxy</td>
+                    <td>Débutant</td>
+                    <td><span class="badge bg-success">Disponible</span></td>
+                </tr>
 
-        <tbody>
-            <tr>
-                <td style="border:2px solid #333;" class="text-center align-middle">1</td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    Introduction RNA-Seq
-                </td>
-                <td style="border:2px solid #333;" class="align-middle text-center">
-                    Guide pédagogique expliquant les bases du RNA-Seq
-                    et son application dans l’étude du neuroblastome.
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    Transcriptomique
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    Python, Galaxy
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    Débutant
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    <span class="badge bg-success">Disponible</span>
-                </td>
-            </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Analyse différentielle</td>
+                    <td>
+                        Comparaison statistique entre groupes malades
+                        et sains à l’aide de modèles biologiques.
+                    </td>
+                    <td>RNA-Seq</td>
+                    <td>R, DESeq2</td>
+                    <td>Intermédiaire</td>
+                    <td><span class="badge bg-warning text-dark">En préparation</span></td>
+                </tr>
 
-            <tr>
-                <td style="border:2px solid #333;" class="text-center align-middle">2</td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    Analyse différentielle
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    Comparaison statistique entre groupes
-                    malades et sains à l’aide de modèles biologiques.
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    RNA-Seq
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    R, DESeq2
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    Intermédiaire
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    <span class="badge bg-warning text-dark">En préparation</span>
-                </td>
-            </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Visualisation des données</td>
+                    <td>
+                        Heatmaps, PCA et graphiques d’expression
+                        pour interpréter les résultats.
+                    </td>
+                    <td>Multi-omique</td>
+                    <td>Matplotlib, Seaborn</td>
+                    <td>Intermédiaire</td>
+                    <td><span class="badge bg-success">Disponible</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-            <tr>
-                <td style="border:2px solid #333;" class="text-center align-middle">3</td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    Visualisation des données
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    Interprétation graphique des données
-                    à l’aide de heatmaps, PCA et graphiques d’expression.
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    Multi-omique
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    Matplotlib, Seaborn
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    Intermédiaire
-                </td>
-                <td style="border:2px solid #333;" class="text-center align-middle">
-                    <span class="badge bg-success">Disponible</span>
-                </td>
-            </tr>
-        </tbody>
-    </table>
 </div>
-
 {% endblock %}
 

@@ -5,13 +5,12 @@
 <html>
 <head>
     <title>{% block title %}{% endblock %}</title>
-    <link href="{% static "css/base.css" %}" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
     {% block extra_css %}{% endblock %}
 </head>
 <body>
     <div id="header">
-        
-        <a href="{% url 'dashboard' %}" class="logo">
+        <a href="{% url 'account:dashboard' %}" class="logo">
             <img src="{% static 'images/logo.jpg' %}" alt="NeuroScan Logo">
             NeuroScan
         </a>
@@ -24,7 +23,7 @@
                     <div class="dropbtn">
                         <div class="avatar-wrapper-header">
                             {% if request.user.profile.photo %}
-                                {% thumbnail request.user.profile.photo 40x40 crop="smart" as thumb %}
+                                {% thumbnail request.user.profile.photo "40x40" crop="smart" as thumb %}
                                     <img src="{{ thumb.url }}" class="avatar-header" alt="Profile">
                             {% else %}
                                 <div class="avatar-placeholder-header">
@@ -39,12 +38,11 @@
                     </div>
 
                     <div class="dropdown-content">
-                        
-                        <a href="{% url 'dashboard' %}" class="dropdown-item">
+                        <a href="{% url 'account:dashboard' %}" class="dropdown-item">
                             <span class="icon">🏠</span> Tableau de bord
                         </a>
 
-                        <a href="{% url 'edit' %}" class="dropdown-item">
+                        <a href="{% url 'account:edit' %}" class="dropdown-item">
                             <span class="icon">👤</span> Modifier le profil
                         </a>
 
@@ -57,7 +55,7 @@
                         
                         <hr>
 
-                        <form action="{% url 'logout' %}" method="post" class="logout-form-dropdown">
+                        <form action="{% url 'account:logout' %}" method="post" class="logout-form-dropdown">
                             {% csrf_token %}
                             <button type="submit" class="dropdown-item-btn">
                                 <span class="icon">🚪</span> Déconnexion
@@ -67,7 +65,7 @@
                 </div>
 
             {% else %}
-                <a href="{% url 'login' %}" class="login-link">Se connecter</a>
+                <a href="{% url 'account:login' %}" class="login-link">Se connecter</a>
             {% endif %}
         </div>
     </div>
@@ -76,19 +74,8 @@
         {% block content %}
         {% endblock %}
     </div>
-    
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'fr', 
-                includedLanguages: 'ar,en,fr', 
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
 
 </body>
 </html>
+    
+    

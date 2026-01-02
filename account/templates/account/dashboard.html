@@ -12,20 +12,20 @@
         </div>
         
         <ul class="main-menu">
-            <li class="active"><a href="{% url 'dashboard' %}">🏠 Tableau de bord</a></li>
+            <li class="active"><a href="{% url 'account:dashboard' %}">🏠 Tableau de bord</a></li>
             <li><a href="{% url 'blog:post_list' %}">🧠 À propos de la maladie</a></li>
-            <li><a href="{% url 'scientific' %}">🔬 Recherche scientifique</a></li>
-            <li><a href="{% url 'data_analysis' %}">📊 Analyse de données</a></li>
-            <li><a href="{% url 'database' %}">🧫 Base de données</a></li>
-            <li><a href="{% url 'support' %}">💡 Sensibilisation & Soutien</a></li>
-            <li><a href="{% url 'tools' %}">🎓 Outils pédagogiques</a></li>
-            <li><a href="{% url 'community' %}">💬 Communauté scientifique</a></li>
-            <li><a href="{% url 'contact' %}">📞 Contact</a></li>
-            <li><a href="{% url 'password_change' %}">⚙️ Paramètres</a></li>
+            <li><a href="{% url 'account:scientific' %}">🔬 Recherche scientifique</a></li>
+            <li><a href="{% url 'account:data_analysis' %}">📊 Analyse de données</a></li>
+            <li><a href="{% url 'account:database' %}">🧫 Base de données</a></li>
+            <li><a href="{% url 'account:support' %}">💡 Sensibilisation & Soutien</a></li>
+            <li><a href="{% url 'account:tools' %}">🎓 Outils pédagogiques</a></li>
+            <li><a href="{% url 'account:community' %}">💬 Communauté scientifique</a></li>
+            <li><a href="{% url 'account:contact' %}">📞 Contact</a></li>
+            <li><a href="{% url 'account:password_change' %}">⚙️ Paramètres</a></li>
         </ul>
         
         <div class="user-info">
-            <form action="{% url "logout" %}" method="post">
+            <form action="{% url 'account:logout' %}" method="post">
                 <p class="user-name">Bonjour, {{ request.user.username }}</p>
                 <button type="submit" class="logout-btn">Déconnexion</button>
                 {% csrf_token %}

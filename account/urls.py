@@ -1,7 +1,7 @@
 from django.urls import path, include  
 from django.contrib.auth import views as auth_views
 from . import views
-
+app_name = 'account'
 urlpatterns = [
     # مسارات تسجيل الدخول والخروج
     path('login/', auth_views.LoginView.as_view(), name='login'),
@@ -23,5 +23,6 @@ urlpatterns = [
     path('support/', views.support, name='support'),
     path('tools/', views.tools, name='tools'),
     path('community/', views.community, name='community'),
-    path('contact/', views.contact_view, name='contact'), 
+    path('contact/', views.contact_view, name='contact'),
+    
 ]
