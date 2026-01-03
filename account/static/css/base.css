@@ -209,3 +209,83 @@ body {
     border: none !important;
     font-size: 14px !important;
 }
+/* تنسيق الروابط في القائمة */
+.dropdown-item:hover {
+    background-color: #f0f7ff; /* لون أزرق فاتح عند التمرير */
+    color: #0d6efd;
+}
+
+.dropdown-item .icon {
+    margin-right: 10px;
+    font-size: 1.1em;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); /* ظل خفيف للأيقونة */
+}
+
+/* تمييز زر الإعدادات بلون خاص */
+.dropdown-item[href*="password_change"]:hover {
+    border-left: 4px solid #ffc107; /* خط أصفر جانبي للإعدادات */
+}
+#sidebar {
+    width: 250px;
+    background: #ffffff;
+    border-right: 1px solid #eee;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.menu-title {
+    text-align: center;
+    color: #1a237e;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    color: #555;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+
+.nav-item:hover {
+    background-color: #f8f9ff;
+    color: #0d6efd;
+}
+
+.nav-icon {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    width: 25px;
+    display: inline-block;
+}
+/* ===========================
+   Footer – NeuroScan
+=========================== */
+
+.site-footer {
+    background: linear-gradient(135deg, #0b132b, #1c2541);
+    color: #ffffff;
+    padding: 20px 40px;
+    margin-top: 80px;
+    border-top: 3px solid #5bc0be;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;   /* 👈 هنا التغيير */
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.footer-sub {
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #b8c1ec;
+}

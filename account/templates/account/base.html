@@ -8,16 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %} | NeuroScan</title>
 
-    <!-- Base CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- Extra CSS -->
     {% block extra_css %}{% endblock %}
 </head>
 
 <body>
 
-<!-- ===== HEADER ===== -->
 <div id="header">
     <a href="{% url 'account:dashboard' %}" class="logo">
         <img src="{% static 'images/logo.jpg' %}" alt="NeuroScan Logo">
@@ -26,10 +25,8 @@
 
     <div class="user-actions">
         {% if request.user.is_authenticated %}
-
         <div class="dropdown">
             <div class="dropbtn">
-
                 <div class="avatar-wrapper-header">
                     {% if request.user.profile.photo %}
                         {% thumbnail request.user.profile.photo 40x40 crop="smart" as thumb %}
@@ -40,72 +37,40 @@
                         </div>
                     {% endif %}
                 </div>
-
                 <span class="username-header">
-                    {{ request.user.username }}
-                    <span style="font-size: 0.8em;">▼</span>
+                    {{ request.user.username }} ▼
                 </span>
             </div>
-
             <div class="dropdown-content">
-                <a href="{% url 'account:dashboard' %}" class="dropdown-item">
-                    <span class="icon">🏠</span> Tableau de bord
-                </a>
-
-                <a href="{% url 'account:edit' %}" class="dropdown-item">
-                    <span class="icon">👤</span> Modifier le profil
-                </a>
-
+                <a href="{% url 'account:dashboard' %}" class="dropdown-item">🏠 Tableau de bord</a>
+                <a href="{% url 'account:password_change' %}" class="dropdown-item">⚙️ Paramètres</a>
                 <hr>
-
-                <div class="dropdown-item google-item">
-                    <span class="icon">🌐</span>
-                    <div id="google_translate_element"></div>
-                </div>
-
-                <hr>
-
-                <form action="{% url 'account:logout' %}" method="post" class="logout-form-dropdown">
+                <form action="{% url 'account:logout' %}" method="post" style="display:inline;">
                     {% csrf_token %}
-                    <button type="submit" class="dropdown-item-btn">
-                        <span class="icon">🚪</span> Déconnexion
-                    </button>
+                    <button type="submit" class="dropdown-item-btn">🚪 Déconnexion</button>
                 </form>
             </div>
         </div>
-
-        {% else %}
-            <a href="{% url 'account:login' %}" class="login-link">Se connecter</a>
         {% endif %}
     </div>
 </div>
 
-<!-- ===== CONTENT ===== -->
-<div id="content">
-    {% block content %}{% endblock %}
+
+
+    <div id="content" style="flex: 1;">
+        {% block content %}{% endblock %}
+    </div>
 </div>
 
-<!-- ===== GOOGLE TRANSLATE ===== -->
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-            {
-                pageLanguage: 'fr',
-                includedLanguages: 'ar,en,fr',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-                autoDisplay: false
-            },
-            'google_translate_element'
-        );
-    }
-</script>
-
-<script
-    type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-</script>
-
 {% block extra_js %}{% endblock %}
+<footer class="site-footer">
+    <div class="footer-content">
+        <p>
+            © 2026 <strong>NeuroScan</strong>. Tous droits réservés.
+        </p>
+       
+    </div>
+</footer>
 
 </body>
 </html>

@@ -9,68 +9,77 @@
 {% endblock %}
 
 {% block content %}
-<div class="container py-4 support-page">
+<section class="support-hero">
+    <div class="hero-overlay">
+        <h1>🎗️ NeuroScan Support & Espoir</h1>
+        <p>
+            Soutenir la science, partager l'espoir, transformer des vies.
+            Plateforme dédiée à la sensibilisation et aux innovations thérapeutiques.
+        </p>
+    </div>
+</section>
 
-    <div class="header-section mb-5 text-start">
-        <h1 class="fw-bold display-5 mb-3"><span class="ribbon-icon">🎗️</span> NeuroScan Support & Espoir</h1>
-        <p class="fs-4 text-secondary mb-4">Soutenir la science, partager l'espoir, transformer des vies.</p>
-        
-        <div class="sensibilisation-info">
-            <h3 class="fw-bold mb-3"><i class="fa-solid fa-microscope"></i> Sensibilisation & Recherche</h3>
-            <ul class="info-list-inline">
-                <li><i class="fa-solid fa-circle-check"></i> Mécanismes génétiques.</li>
-                <li><i class="fa-solid fa-circle-check"></i> Innovations thérapeutiques.</li>
-            </ul>
-        </div>
+
+<div class="support-container">
+    
+    <div class="sensibilisation-card mb-5">
+        <h3 class="fw-bold mb-3"><i class="fa-solid fa-microscope"></i> Sensibilisation & Recherche</h3>
+        <ul class="info-list-inline">
+            <li><i class="fa-solid fa-circle-check"></i> Mécanismes génétiques.</li>
+            <li><i class="fa-solid fa-circle-check"></i> Innovations thérapeutiques.</li>
+        </ul>
     </div>
 
     <div class="video-grid-horizontal mb-5">
-        <div class="video-item-small shadow-sm border-blue">
+        <div class="video-card border-blue">
             <a href="https://www.youtube.com/watch?v=T3D-EV_KycE" target="_blank">
-                <div class="thumb-container">
+                <div class="video-thumb">
                     <img src="https://img.youtube.com/vi/T3D-EV_KycE/mqdefault.jpg" alt="Video 1">
-                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
                 </div>
             </a>
-            <div class="video-title-mini">La pathologie (Osmosis)</div>
+            <div class="video-info">La pathologie (Osmosis)</div>
         </div>
 
-        <div class="video-item-small shadow-sm border-blue">
+        <div class="video-card border-blue">
             <a href="https://www.youtube.com/watch?v=QntpVDFt-64" target="_blank">
-                <div class="thumb-container">
+                <div class="video-thumb">
                     <img src="https://img.youtube.com/vi/QntpVDFt-64/mqdefault.jpg" alt="Video 2">
-                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
                 </div>
             </a>
-            <div class="video-title-mini">Nouvelles thérapies</div>
+            <div class="video-info">Nouvelles thérapies</div>
         </div>
     </div>
 
-    <div class="text-start mb-4">
-        <h3 class="text-danger fw-bold"><i class="fa-solid fa-heart"></i> Histoires de Courage</h3>
+    <div class="section-title mb-4">
+        <h3 class="text-dark fw-bold"><i class="fa-solid fa-heart text-danger"></i> Histoires de Courage</h3>
     </div>
     
     <div class="video-grid-horizontal">
-        <div class="video-item-small shadow-sm border-red">
+        <div class="video-card border-red">
             <a href="https://www.youtube.com/watch?v=mg7dOpu7_qQ" target="_blank">
-                <div class="thumb-container">
-                    <img src="https://img.youtube.com/vi/mg7dOpu7_qQ/mqdefault.jpg" alt="Isla">
-                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                <div class="video-thumb">
+                    <img src="https://img.youtube.com/vi/mg7dOpu7_qQ/maxresdefault.jpg" alt="Isla">
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
                 </div>
             </a>
-            <div class="video-title-mini fw-bold text-danger">Le combat d'Isla</div>
+            <div class="video-info">
+                <span>Le combat d'Isla</span>
+            </div>
         </div>
 
-        <div class="video-item-small shadow-sm border-red">
+        <div class="video-card border-red">
             <a href="https://www.youtube.com/watch?v=ZS0P6HQT5-U" target="_blank">
-                <div class="thumb-container">
-                    <img src="https://img.youtube.com/vi/ZS0P6HQT5-U/mqdefault.jpg" alt="Evelyn">
-                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                <div class="video-thumb">
+                    <img src="https://img.youtube.com/vi/ZS0P6HQT5-U/maxresdefault.jpg" alt="Evelyn">
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
                 </div>
             </a>
-            <div class="video-title-mini fw-bold text-danger">Pour Evelyn</div>
+            <div class="video-info">
+                <span>Pour Evelyn</span>
+            </div>
         </div>
     </div>
-
 </div>
 {% endblock %}

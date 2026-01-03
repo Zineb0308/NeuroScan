@@ -8,63 +8,101 @@
 {% endblock %}
 
 {% block content %}
-<div class="contact-container">
 
-    <!-- HEADER -->
-    <div class="contact-header">
-        <h2>📞 Contact NeuroScan</h2>
+<!-- HERO -->
+<section class="contact-hero">
+    <div class="hero-overlay">
+        <h1>📞 Contact NeuroScan</h1>
         <p>
-            Une plateforme scientifique dédiée à l’analyse et à la recherche biomédicale.
+            Plateforme scientifique dédiée à la recherche biomédicale,
+            à l’analyse génomique et à la bioinformatique.
         </p>
     </div>
+</section>
 
-    <!-- EMAILS -->
-    <div class="contact-emails-grid">
-        <div class="email-card research">
-            <h6>🧬 Recherche</h6>
-            <p>asmaebks@gmail.com</p>
-        </div>
+<div class="contact-container">
 
-        <div class="email-card support">
-            <h6>💻 Support</h6>
-            <p>gelecegindehalari@gmail.com</p>
-        </div>
+    <!-- CONTACT INFOS -->
+    <section class="contact-info">
 
-        <div class="email-card analysis">
-            <h6>📊 Analyse</h6>
+        <div class="info-card">
+            <h4>🧬 Recherche Scientifique</h4>
             <p>ayaamerahi772@gmail.com</p>
+            <p>📞 +213 772 761 675</p>
         </div>
 
-        <div class="email-card admin">
-            <h6>⚙️ Administration</h6>
-            <p>admin.neuroscan@gmail.com</p>
+        <div class="info-card">
+            <h4>💻 Support Technique</h4>
+            <p>gelecegindehalari@gmail.com</p>
+            <p>📞 +213 663 493 000</p>
         </div>
-    </div>
 
-    <!-- FORM -->
-    <div class="contact-form-card">
-        <h4>📩 Formulaire de contact</h4>
+        <div class="info-card">
+            <h4>📊 Analyse & Collaboration</h4>
+            <p>asmaebks@gmail.com</p>
+            <p>📞 +213 551 687 323</p>
+        </div>
 
-        {% if messages %}
-            {% for message in messages %}
-                <div class="success-message">{{ message }}</div>
-            {% endfor %}
-        {% endif %}
+    </section>
 
-        <form method="post" class="contact-form">
-            {% csrf_token %}
+    <!-- FORM + MAP -->
+    <section class="contact-main">
 
-            <div class="form-row">
-                {{ form.name }}
-                {{ form.email }}
+        <!-- FORM -->
+        <div class="contact-form-card">
+            <h3>📩 Formulaire de contact</h3>
+            <p class="form-desc">
+                Envoyez-nous vos questions, propositions de collaboration
+                ou fichiers scientifiques (PDF, images, datasets).
+            </p>
+
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="success-message">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+
+            <form method="post" enctype="multipart/form-data" class="contact-form">
+                {% csrf_token %}
+
+                <div class="form-row">
+                    {{ form.name }}
+                    {{ form.email }}
+                </div>
+
+                {{ form.subject }}
+                {{ form.message }}
+
+                <!-- FILE UPLOAD -->
+                <div class="file-upload">
+                    <label>📎 Joindre un fichier</label>
+                    {{ form.file }}
+                    <small>Formats acceptés : PDF, JPG, PNG</small>
+                </div>
+
+                <button type="submit">📤 Envoyer le message</button>
+            </form>
+        </div>
+
+        <!-- MAP -->
+        <div class="map-card">
+            <h3>🗺️ Localisation</h3>
+            <p>NeuroScan – Recherche biomédicale</p>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps?q=Algeria&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
+        </div>
 
-            {{ form.subject }}
-            {{ form.message }}
-
-            <button type="submit">📤 Envoyer le message</button>
-        </form>
-    </div>
+    </section>
 
 </div>
+
 {% endblock %}
+
+
+

@@ -1,10 +1,11 @@
 from django.contrib.auth import authenticate, login, get_user_model
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
 from django.db import models
-from .forms import LoginForm, UserRegistrationForm, UserEditForm, ProfileEditForm
+from .forms import LoginForm, UserRegistrationForm, UserEditForm, ProfileEditForm, ContactForm
 from account.models import Profile, Contact
 from blog_app.models import Post, ResearchArticle
 @login_required
@@ -36,9 +37,20 @@ def community(request):
     return render(request, 'account/pages/community.html', {'section': 'community'})
 
 @login_required
-def contact_view(request): # أو contact حسب ما هو مسمى في urls.py
-    return render(request, 'account/pages/contact.html', {'section': 'contact'})
+def contact_view(request):
+    if request.method == "POST":
+        form = ContactForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "📨 Message envoyé avec succès !")
+            return redirect("account:contact")
+    else:
+        form = ContactForm()
 
+    return render(request, "account/pages/contact.html", {
+        "form": form,
+        "section": "contact"
+    })
 @login_required
 def contact(request):
     if request.method == 'POST':
@@ -115,3 +127,11 @@ def bioinformatics_analysis(request):
 
 def rna_seq_analysis(request):
     return render(request, "account/pages/rna_seq_analysis.html")
+
+
+from blog_app.models import Post # أو اسم الموديل عندك في blog_app
+
+def disease_about_view(request):
+    # جلب المنشورات من تطبيق blog_app
+    articles = Post.objects.all().order_by('-publish') 
+    return render(request, 'account/pages/disease_info.html', {'articles': articles})

@@ -1,15 +1,45 @@
-<div class="pagination">
-    <span class="step-links">
+{% extends 'base.html' %}
+{% block pagination %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/pagination.css' %}">
+
+<nav class="pagination-container" aria-label="Pagination">
+    <ul class="pagination-list">
+
+        <!-- Previous -->
         {% if page.has_previous %}
-            <a href="?page={{ page.previous_page_number }}">PrécédENT</a>
+            <li class="page-item">
+                <a class="page-link prev" href="?page={{ page.previous_page_number }}">
+                    ← Précédent
+                </a>
+            </li>
+        {% else %}
+            <li class="page-item disabled">
+                <span class="page-link">← Précédent</span>
+            </li>
         {% endif %}
 
-        <span class="current">
-            Page {{ page.number }} de {{ page.paginator.num_pages }}.
-        </span>
+        <!-- Current page info -->
+        <li class="page-info">
+            Page <strong>{{ page.number }}</strong> / {{ page.paginator.num_pages }}
+        </li>
 
+        <!-- Next -->
         {% if page.has_next %}
-            <a href="?page={{ page.next_page_number }}">Suivant</a>
+            <li class="page-item">
+                <a class="page-link next" href="?page={{ page.next_page_number }}">
+                    Suivant →
+                </a>
+            </li>
+        {% else %}
+            <li class="page-item disabled">
+                <span class="page-link">Suivant →</span>
+            </li>
         {% endif %}
-    </span>
-</div>
+
+    </ul>
+</nav>
+{% endblock pagination %}
+{% block extra_js %}
+

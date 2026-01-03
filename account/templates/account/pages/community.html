@@ -1,17 +1,203 @@
 {% extends "account/base.html" %}
-{% block title %}Communauté | NeuroScan{% endblock %}
+{% load static %}
+
+{% block title %}Communauté Scientifique – NeuroScan{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/community.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+{% endblock %}
 
 {% block content %}
-<div class="container py-4">
 
-<h3 class="fw-bold text-primary mb-4">🌍 Communauté scientifique</h3>
+<!-- HERO -->
+<section class="community-hero">
+    <div class="hero-overlay">
+        <h1>🌍 Communauté NeuroScan</h1>
+        <p>
+            Un espace collaboratif dédié à la recherche, au partage scientifique
+            et à l’innovation autour du neuroblastome.
+        </p>
+    </div>
+</section>
 
-<ul class="list-group shadow-sm">
-    <li class="list-group-item">👩‍🔬 Chercheurs</li>
-    <li class="list-group-item">👨‍⚕️ Cliniciens</li>
-    <li class="list-group-item">🎓 Étudiants</li>
-    <li class="list-group-item">📄 Publications</li>
-</ul>
+<!-- INTRO -->
+<section class="community-container">
+    <div class="intro-card">
+        <h2><i class="fa-solid fa-users"></i> Pourquoi une communauté scientifique ?</h2>
+        <p>
+            Le neuroblastome est une pathologie complexe nécessitant une approche
+            multidisciplinaire. NeuroScan réunit chercheurs, cliniciens,
+            bioinformaticiens et étudiants afin de partager des connaissances,
+            des analyses et des ressources fiables.
+        </p>
+    </div>
 
-</div>
+    <!-- CARDS GRID -->
+    <div class="community-grid">
+
+        <div class="community-card research">
+            <i class="fa-solid fa-dna"></i>
+            <h3>Recherche Génétique</h3>
+            <p>
+                Discussions autour des mutations clés, altérations chromosomiques
+                et mécanismes moléculaires impliqués dans le neuroblastome.
+            </p>
+        </div>
+
+        <div class="community-card bioinfo">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Bioinformatique</h3>
+            <p>
+                Analyses RNA-Seq, PCA, Volcano plots et intégration
+                génomique–transcriptomique pour identifier des cibles thérapeutiques.
+            </p>
+        </div>
+
+        <div class="community-card clinic">
+            <i class="fa-solid fa-stethoscope"></i>
+            <h3>Perspective Clinique</h3>
+            <p>
+                Partage d’approches diagnostiques, de stratification du risque
+                et d’innovations thérapeutiques actuelles.
+            </p>
+        </div>
+
+        <div class="community-card education">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Formation & Apprentissage</h3>
+            <p>
+                Ressources pédagogiques, articles vulgarisés et
+                accompagnement des jeunes chercheurs.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- MISSION -->
+    <div class="mission-section">
+        <h2><i class="fa-solid fa-bullseye"></i> Mission de NeuroScan</h2>
+        <ul>
+            <li>✔ Faciliter la compréhension scientifique du neuroblastome</li>
+            <li>✔ Centraliser les données et analyses biologiques</li>
+            <li>✔ Encourager la collaboration interdisciplinaire</li>
+            <li>✔ Transformer les données en connaissances exploitables</li>
+        </ul>
+    </div>
+
+  
+
+<section class="scientific-qa">
+    <h2 class="section-title">🧬 Questions Scientifiques & Réponses</h2>
+    <p class="section-subtitle">
+        Comprendre le neuroblastome à travers la génomique, la transcriptomique et la bioinformatique.
+    </p>
+
+    <div class="qa-container">
+
+        <div class="qa-item">
+            <button class="qa-question">
+                Quel est le rôle de l’amplification du gène MYCN dans le neuroblastome ?
+            </button>
+            <div class="qa-answer">
+                <p>
+                    L’amplification du gène <strong>MYCN</strong> est associée aux formes agressives du neuroblastome.
+                    Elle favorise une prolifération cellulaire rapide et constitue un facteur pronostique
+                    majeur lié à une évolution défavorable de la maladie.
+                </p>
+            </div>
+        </div>
+
+        <div class="qa-item">
+            <button class="qa-question">
+                Pourquoi le RNA-Seq est-il essentiel dans la recherche sur le neuroblastome ?
+            </button>
+            <div class="qa-answer">
+                <p>
+                    Le RNA-Seq permet d’identifier les gènes différentiellement exprimés,
+                    les voies biologiques dérégulées et les cibles thérapeutiques potentielles
+                    impliquées dans la progression tumorale.
+                </p>
+            </div>
+        </div>
+
+        <div class="qa-item">
+            <button class="qa-question">
+                Quels types de mutations sont principalement analysés ?
+            </button>
+            <div class="qa-answer">
+                <p>
+                    Les analyses portent principalement sur les mutations somatiques,
+                    les variations du nombre de copies (CNV) et les réarrangements structurels
+                    affectant les oncogènes et les gènes suppresseurs de tumeurs.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="ai-corner">
+    <h2 class="section-title">🤖 AI Corner – NeuroScan</h2>
+    <p class="section-subtitle">
+        L’intelligence artificielle au cœur de l’analyse des données biologiques.
+    </p>
+
+    <div class="ai-grid">
+
+        <div class="ai-card">
+            <h3>🔍 Biomarqueurs Prédictifs</h3>
+            <p>
+                Les modèles d’IA permettent d’identifier des biomarqueurs associés
+                à la progression tumorale et à la réponse aux traitements.
+            </p>
+        </div>
+
+        <div class="ai-card">
+            <h3>🧠 Intégration Multi-Omique</h3>
+            <p>
+                L’IA facilite l’intégration des données génomiques, transcriptomiques
+                et cliniques afin de révéler des signatures moléculaires complexes.
+            </p>
+        </div>
+
+        <div class="ai-card">
+            <h3>⚕️ Médecine Personnalisée</h3>
+            <p>
+                NeuroScan exploite l’IA pour soutenir des stratégies thérapeutiques
+                adaptées au profil moléculaire de chaque patient.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- CALL TO ACTION -->
+    <div class="community-cta">
+        <h3>🚀 Rejoignez la communauté</h3>
+        <p>
+            Ensemble, nous pouvons accélérer la recherche et
+            améliorer la prise en charge des patients.
+        </p>
+        <a href="{% url 'account:contact' %}" class="cta-btn">
+            Contacter l’équipe NeuroScan
+        </a>
+    </div>
+<script>
+    document.querySelectorAll(".qa-question").forEach(question => {
+        question.addEventListener("click", () => {
+            const answer = question.nextElementSibling;
+
+            document.querySelectorAll(".qa-answer").forEach(a => {
+                if (a !== answer) a.style.display = "none";
+            });
+
+            answer.style.display =
+                answer.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+
+</section>
+
 {% endblock %}

@@ -30,6 +30,7 @@ urlpatterns = [
     path("scientific/mutations/", views.mutation_analysis, name="mutation_analysis"),
     path("scientific/bioinformatics/", views.bioinformatics_analysis, name="bioinformatics_analysis"),
     path("scientific/rna-seq/", views.rna_seq_analysis, name="rna_seq_analysis"),
+    path('about-disease/', views.disease_about_view, name='about_disease'),
 ]
 
 if settings.DEBUG:
