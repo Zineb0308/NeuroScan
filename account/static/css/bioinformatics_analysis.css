@@ -1,7 +1,30 @@
-.bio-bg {
-    background: linear-gradient(135deg, #56afc5, #7bcae2, #48ddd1);
+/* ===== HERO ===== */
+.analysis-hero {
+    padding: 80px 40px;
+    border-radius: 22px;
+    color: white;
+    text-align: center;
+    margin-bottom: 80px;
 }
 
+.bio-bg {
+    background: linear-gradient(135deg, #0c4a6e, #0284c7, #38bdf8);
+}
+
+.analysis-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.analysis-hero p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+/* ===== CONTENT ===== */
 .analysis-container {
     display: grid;
     gap: 40px;
@@ -11,18 +34,26 @@
     background: white;
     padding: 35px;
     border-radius: 20px;
-    box-shadow: 0 25px 60px rgb(0, 0, 12);
+    box-shadow: 0 25px 60px rgba(0,0,12,0.15);
 }
 
 .info-card h3 {
-    color: #73b4d4;
+    color: #0369a1;
     margin-bottom: 15px;
 }
 
+.info-card ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+/* ===== CHART ===== */
 .chart-placeholder {
     background: #e0f2fe;
     border-radius: 20px;
     padding: 50px;
     text-align: center;
     border: 2px dashed #0ea5e9;
+    font-weight: bold;
 }
+

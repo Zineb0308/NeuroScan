@@ -1,8 +1,30 @@
-
-.rna-bg {
-    background: linear-gradient(135deg, #56c584, #57c581, #22c55e);
+/* ===== HERO ===== */
+.analysis-hero {
+    padding: 80px 40px;
+    border-radius: 22px;
+    color: white;
+    text-align: center;
+    margin-bottom: 80px;
 }
 
+.rna-bg {
+    background: linear-gradient(135deg, #166534, #22c55e, #4ade80);
+}
+
+.analysis-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.analysis-hero p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+/* ===== CONTENT ===== */
 .analysis-container {
     display: grid;
     gap: 40px;
@@ -20,10 +42,17 @@
     margin-bottom: 15px;
 }
 
+.info-card ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+/* ===== CHART ===== */
 .chart-placeholder {
     background: #dcfce7;
     border-radius: 20px;
     padding: 50px;
     text-align: center;
     border: 2px dashed #22c55e;
+    font-weight: bold;
 }
