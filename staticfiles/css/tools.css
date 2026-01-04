@@ -1,0 +1,41 @@
+/* ===============================
+   Outils pédagogiques – NeuroScan
+   =============================== */
+
+.tools-header {
+    border-left: 8px solid #f4b400;
+    background: #ffffff;
+}
+
+.tools-header h2 {
+    color: #1a428a;
+}
+
+/* TABLE */
+.tools-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+.tools-table th,
+.tools-table td {
+    border: 2px solid #f4b400;
+    padding: 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tools-table th {
+    background-color: #f4b400;
+    color: #1a428a;
+    font-weight: bold;
+}
+
+.tools-table td {
+    background-color: #f9fbff;
+}
+
+.tools-table tr:hover td {
+    background-color: #eef4ff;
+}

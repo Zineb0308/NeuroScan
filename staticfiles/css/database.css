@@ -1,0 +1,90 @@
+/* تنسيق الحاويات والبطاقات */
+.container {
+    max-width: 1200px;
+}
+
+.stats-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.stats-card .card-header {
+    background-color: #97b0c9;
+    border-bottom: 1px solid #90969c;
+    color: #2d3748;
+    font-size: 1.1rem;
+    padding: 15px;
+}
+
+/* تنسيق الجدول */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.table thead th {
+    background-color: #f1f5f9;
+    color: #475569;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.025em;
+    padding: 15px;
+    border: none;
+}
+
+.table tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #1e293b;
+    vertical-align: middle;
+}
+
+/* تنسيق العلامات الجينية (Gene Tags) */
+.gene-tag {
+    display: inline-block;
+    background: #e2e8f0;
+    color: #475569;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-right: 4px;
+    border: 1px solid #cbd5e1;
+}
+
+/* تنسيق الحالات الطبية (Badges) */
+.badge-stage {
+    min-width: 70px;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pronostic-label {
+    font-weight: bold;
+    display: block;
+}
+
+/* تأثيرات التفاعل */
+.table-hover tbody tr:hover {
+    background-color: #f8fafc !important;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* تخصيص ألوان الـ Badges لتكون أهدأ */
+.bg-danger { background-color: #ef4444 !important; }
+.bg-success { background-color: #10b981 !important; }
+.bg-warning { background-color: #f59e0b !important; }
+.bg-info { background-color: #3b82f6 !important; }
+
+/* تنسيق قسم الرسوم البيانية */
+canvas {
+    max-height: 250px;
+    width: 100% !important;
+}
